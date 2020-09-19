@@ -13,15 +13,39 @@
     </div>
 
     <header>
-        <img class="logo" src="images/logoyellow.png" alt="Logo">
+        <img class="logo" src="images/logoyellow.png" alt="Logo" onclick="document.location.href = '/home.html';">
         <nav>
             <ul class="nav_links">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/store.html">Shop</a></li>
+                <li><a href="/routes.html">Routes</a></li>
+                <li><div class="dropdown"><a class="dropbtn" id="service" onclick="myFunction()">Services<i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="/hire.html">Hire</a>
+                        <a href="/repair.html">Repair</a>
+                      </div>
+                    </div></li>
             </ul>
         </nav>
-        <a class="cta" href="#"><button>Contact</button></a>
+        <a class="cta" href="/contact.html"><button>Contact</button></a>
+
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+              if (!e.target.matches('.dropbtn')) {
+              var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('show');
+                }
+              }
+            }
+            </script>
     </header>
 </body>
 </html>

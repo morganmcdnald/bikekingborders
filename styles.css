@@ -7,10 +7,10 @@
     background-color: #184d47;
 }
 
-li, a {
+li, a, .dropdown .dropbtn {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: #d6efc7;
     text-decoration: none;
 }
@@ -18,7 +18,7 @@ li, a {
 button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: #24252A;
     text-decoration: none;
 }
@@ -32,7 +32,7 @@ header {
 
 .logo {
     cursor: pointer;
-    max-width: 12%;
+    max-width: 9%;
 }
 
 .nav_links {
@@ -70,8 +70,36 @@ button:hover {
     padding-top: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    font-size: 3.5vw;
+    font-size: 2vw;
     color: #eebb4d;
     text-decoration: none;
     letter-spacing: 10px;
 }
+
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #96bb7c;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #24252A;
+    background-color: #2e7a71;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #23665e;
+  }
+  
+  .show {
+    display: block;
+  }
