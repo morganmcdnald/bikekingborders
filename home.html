@@ -9,16 +9,18 @@
     <title>Bike King Borders</title>
 </head>
 
-<body>
-    <div class="pageTitle">
-      <img class="logo" src="images/logoyellow.png" alt="Logo" onclick="document.location.href = '/home.html';">
-      <p>BIKE KING BORDERS </p>
-    </div>
+<!-- TODO:
+     Add in some Images.
+     General about paragraph
+     Link to a youtube video
+     Form for signing up to newsletter
+     Footer containing the Address and Phone Number -->
 
-    <header>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="/gallery.html">Gallery</a></li>
+<body>
+    <div class="wrapper">
+        <div class="nav_links">
+            <img class="logo" src="images/logoyellow.png" style="float: left;" alt="Logo" onclick="document.location.href = '/home.html';"> <p style="float: none;">BIKE KING BORDERS </p>
+            <li><a href="/gallery.html">Gallery</a></li>
                 <li><a href="/store.html">Shop</a></li>
                 <li><a href="/routes.html">Routes</a></li>
                 <li><div class="dropdown"><a class="dropbtn" id="service" onclick="myFunction()">Services<i class="fa fa-caret-down"></i></a>
@@ -28,13 +30,21 @@
                       </div>
                     </div>
                 </li>
-            </ul>
-        </nav>
-        <a class="cta" href="/contact.html"><button>Contact Us</button></a>
-    </header>
+                <a class="cta" href="/contact.html"><button>Contact Us</button></a>
+        </div>
+    </div>
 
-    <div class="landingPage">
-      <h1>Landing Page Title Test</h1>
+    <!-- Landing Page -->
+
+    <div class="landing">
+        <div class="landingText">
+            <h1>WHO ARE WE?</h1>
+            <h2>BIKE KING BORDERS!</h2>
+            <h3>We are a bike company operating out of Galashiels in Glasgow, Scotland. <br> We specialise in the hire, sale and repair of bikes.</h3>
+        </div>
+        <div class="landingImage">
+            <img src="/images/landingBike.jpg" alt="Bike In Nature Trail">
+        </div>
     </div>
 
 </body>
