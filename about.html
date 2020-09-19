@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="dropdown.js"></script>
+
     <title>About Us</title>
 </head>
 
 <body>
     <div class="pageTitle">
-        <p>BIKE KING BORDERS </p>
+      <img class="logo" src="images/logoyellow.png" alt="Logo" onclick="document.location.href = '/home.html';">
+      <p>BIKE KING BORDERS </p>
     </div>
 
     <header>
-        <img class="logo" src="images/logoyellow.png" alt="Logo" onclick="document.location.href = '/home.html';">
         <nav>
             <ul class="nav_links">
                 <li><a href="/about.html">About Us</a></li>
                 <li><a href="/store.html">Shop</a></li>
                 <li><a href="/routes.html">Routes</a></li>
-                <li><a href="/hire.html">Services</a></li>
+                <li><div class="dropdown"><a class="dropbtn" id="service" onclick="myFunction()">Services<i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="/hire.html">Hire</a>
+                        <a href="/repair.html">Repair</a>
+                      </div>
+                    </div>
+                </li>
             </ul>
         </nav>
         <a class="cta" href="/contact.html"><button>Contact</button></a>
