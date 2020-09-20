@@ -1,240 +1,283 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+html, body {
     background-color: #184d47;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
-li, a, .dropdown .dropbtn {
+html {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 1.4vw;
+}
+
+.nav {
+    position: fixed;
+    text-align: right;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    z-index: 2;
+}
+
+.menu {
+    padding: 0 30px 0 0;
+    background-color: #184d47;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
+    z-index: 1;
+}
+
+.menu a {
+    text-decoration: none;
     color: #d6efc7;
-    text-decoration: none;
+    margin: 0 10px;
+    line-height: 70px;
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
 }
 
-button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 1.2vw;
-    color: #24252A;
-    text-decoration: none;
+.menu a:hover{
+    color: #eebb4d;
+}
+
+.menu a.active {
+    padding-bottom: 7px;
+    color: #96bb7c;
+    border-bottom: 1.5px solid #96bb7c;
 }
 
 .logo {
     width: auto;
     max-height: 50px;
-    padding-right: 3%;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 20px;
 }
 
-.nav_links {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px 0 25px;
-    background-color: #184d47;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav_links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover{
+label {
+    padding: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
     color: #eebb4d;
-}
-
-.nav_links p {
-    text-align: left;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 1.4vw;
-    color: #eebb4d;
-    text-decoration: none;
-    letter-spacing: 10px;
-    padding: 3% 0 0 0;
-}
-
-button {
-    padding: 9px 25px;
-    background-color: rgba(238, 187, 77, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgba(238, 187, 77, 0.8);
-}
-
-.pageTitle {
-    text-align: left;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 2vw;
-    color: #eebb4d;
-    text-decoration: none;
-    letter-spacing: 10px;
-}
-
-
-  .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: #96bb7c;
-    min-width: 50px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: #24252A;
-    background-color: #2e7a71;
-    padding: 12px 16px;
-    text-decoration: none;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle2 {
+    display: none;
+}
+
+.showcase::after {
+    content: '';
+    height: 80vh;
+    width: 100%;
+    background-image: url(/images/landingBike.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #23665e;
-  }
-  
-  .show {
-    display: block;
-  }
-
-  .landingPage h1{
-    text-align: center;
-    padding-top: 2%;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 3vw;
-    color: #eebb4d;
-    text-decoration: none;
-    letter-spacing: 10px;
-  }
-
-  .landing {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 5vw 0 5vw;
-      height: 100vh;
-  }
-
-  .landingText h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 4vw;
-    margin: 0 !important;
-    text-align: center;
-  }
-
-  .landingText h2 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 3vw;
-    margin: 0 !important;
-    text-align: center;
-    opacity: 0.9;
-  }
-
-  .landingText h3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    margin: 6px !important;
-    opacity: 0.5;
-    line-height: 30px;
-    text-align: center;
+    filter: blur(6px);
+    transition: all 1000ms;
 }
 
-.landingImage img {
-    width: 50vw;
-    position: relative;
+.showcase:hover::after {
+    filter: blur(0px);
+    transition: all 1000ms;
 }
 
-.about {
-    height: 600px;
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+.showcase:hover .content {
+    filter: blur(2px);
+    transition: all 1000ms;
 }
 
-.aboutText {
-    position: relative;
-    padding: 0 50px;
-    height: inherit;
-}
-
-.aboutText h1 {
-    width: 10vw;
+.content {
     position: absolute;
-    top: 50px;
+    z-index: 3;
+    top: 10%;
+    left: 50%;
+    margin-top: 195px;
+    margin-left: -200px;
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
 }
 
-.aboutText img {
-    width: 30vw;
-    position: relative;
-    top: 50px;
+.content .bigLogo {
+    height: 200px;
 }
 
-.aboutList {
-    width: 50%;
+.content .title {
+    color: white;
+    font-size: 2.2rem;
+    margin-top: 1rem;
 }
 
-ol {
-    list-style: none;
+.content .showcaseText {
+    color: white;
+    line-height: 1.7;
+    margin-top: 1rem;
 }
 
-ol li {
-    font-size: 34px;
-    position: relative;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #d6efc7;
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 2rem;
 }
 
-li p {
-    padding-left: 60px;
-    line-height: 30px;
-}
-
-li span {
-    position: absolute;
-    line-height: 25px;
-}
-
-a.active {
-    color: #96bb7c;
-    border-bottom: 1.5px solid #96bb7c;
-}
-
-.dropbtnService {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 1.4vw;
+.grid-4 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
     color: #d6efc7;
-    text-decoration: none;
+}
+
+.grid-4 a:link {
+    color: #d6efc7;
+}
+
+.grid-4 a:visited {
+    color: #d6efc7;
+}
+
+.grid-2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    color: #d6efc7;
+    padding-top: 2rem;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.newsletter {
+    padding: 1.2rem;
+}
+
+.signup {
+    font-size: 2rem;
+    color: #181818;
+}
+
+.bg-light {
+    background: #d6efc7;
+    color: #333;
+}
+
+.bg-dark {
+    background: #181818;
+    color: #d6efc7;
+}
+
+.socials h3 {
+    padding: 1rem;
+    color: #d6efc7;
+}
+
+footer {
+    padding: 1.3rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 780px) {
+    label {
+        display: block;
+        cursor: pointer;
+        background-color: #184d47;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        background-color: #143f3a;
+        border-bottom: 1px solid #eebb4d;
+        margin: 0;
+    }
+
+    .menu a.active {
+        padding-bottom: 0;
+        color: #96bb7c;
+        border-bottom: 1.5px solid #eebb4d;
+    }
+
+    .menu a:hover{
+        background-color: #10332f;
+        color: #eebb4d;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    .showcase {
+        text-align: center;
+    }
+
+    .showcase::after {
+        height: 50vh;
+    }
+
+    .content {
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    .content .bigLogo {
+        height: 150px;
+    }
+
+    .content .title {
+        font-size: 1.7rem;
+    }
+
+    .content .showcaseText {
+        display: none;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        max-width: 600px;
+    }
+
+}
+
+@media only screen and (min-width: 1100px) {
+    #toggle2 {
+        display: block;
+    }
+
+    .logo {
+        padding-right: 30px;
+    }
+
+    .logoGroup p {
+        font-weight: 300;
+        letter-spacing: 10px;
+        color: #eebb4d;
+        opacity: 0.9;
+    }
 }
