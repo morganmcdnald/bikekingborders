@@ -13,15 +13,19 @@ html {
 }
 
 .nav {
+    position: fixed;
     text-align: right;
+    width: 100%;
     height: 70px;
     line-height: 70px;
+    z-index: 2;
 }
 
 .menu {
     padding: 0 30px 0 0;
     background-color: #184d47;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
+    z-index: 1;
 }
 
 .menu a {
@@ -30,9 +34,6 @@ html {
     margin: 0 10px;
     line-height: 70px;
     font-size: 20px;
-}
-
-.menu a {
     transition: all 0.3s ease 0s;
 }
 
@@ -70,10 +71,63 @@ label {
     display: none;
 }
 
+.showcase::after {
+    content: '';
+    height: 80vh;
+    width: 100%;
+    background-image: url(/images/landingBike.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(6px);
+    transition: all 1000ms;
+}
+
+.showcase:hover::after {
+    filter: blur(0px);
+    transition: all 1000ms;
+}
+
+.showcase:hover .content {
+    filter: blur(2px);
+    transition: all 1000ms;
+}
+
+.content {
+    position: absolute;
+    z-index: 3;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -200px;
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+}
+
+.content .bigLogo {
+    height: 200px;
+}
+
+.content .title {
+    color: white;
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+.content .showcaseText {
+    color: white;
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
 @media only screen and (max-width: 780px) {
     label {
         display: block;
         cursor: pointer;
+        background-color: #184d47;
         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
     }
 
@@ -121,17 +175,4 @@ label {
         color: #eebb4d;
         opacity: 0.9;
     }
-}
-
-button {
-    padding: 9px 25px;
-    background-color: rgba(238, 187, 77, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgba(238, 187, 77, 0.8);
 }
