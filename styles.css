@@ -137,6 +137,14 @@ label {
     color: #d6efc7;
 }
 
+.grid-4 a:link {
+    color: #d6efc7;
+}
+
+.grid-4 a:visited {
+    color: #d6efc7;
+}
+
 .grid-2 {
     display: grid;
     grid-gap: 20px;
