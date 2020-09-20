@@ -10,7 +10,7 @@
 li, a, .dropdown .dropbtn {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     color: #d6efc7;
     text-decoration: none;
 }
@@ -23,20 +23,28 @@ button {
     text-decoration: none;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5%;
-}
-
 .logo {
-    cursor: pointer;
-    max-width: 9%;
+    width: auto;
+    max-height: 50px;
+    padding-right: 3%;
 }
 
 .nav_links {
-    list-style: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color: #184d47;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .nav_links li {
@@ -50,6 +58,17 @@ header {
 
 .nav_links li a:hover{
     color: #eebb4d;
+}
+
+.nav_links p {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 1.4vw;
+    color: #eebb4d;
+    text-decoration: none;
+    letter-spacing: 10px;
+    padding: 3% 0 0 0;
 }
 
 button {
@@ -66,8 +85,7 @@ button:hover {
 }
 
 .pageTitle {
-    text-align: center;
-    padding-top: 10px;
+    text-align: left;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 2vw;
@@ -103,3 +121,120 @@ button:hover {
   .show {
     display: block;
   }
+
+  .landingPage h1{
+    text-align: center;
+    padding-top: 2%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 3vw;
+    color: #eebb4d;
+    text-decoration: none;
+    letter-spacing: 10px;
+  }
+
+  .landing {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5vw 0 5vw;
+      height: 100vh;
+  }
+
+  .landingText h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  .landingText h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 3vw;
+    margin: 0 !important;
+    text-align: center;
+    opacity: 0.9;
+  }
+
+  .landingText h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 6px !important;
+    opacity: 0.5;
+    line-height: 30px;
+    text-align: center;
+}
+
+.landingImage img {
+    width: 50vw;
+    position: relative;
+}
+
+.about {
+    height: 600px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutText {
+    position: relative;
+    padding: 0 50px;
+    height: inherit;
+}
+
+.aboutText h1 {
+    width: 10vw;
+    position: absolute;
+    top: 50px;
+}
+
+.aboutText img {
+    width: 30vw;
+    position: relative;
+    top: 50px;
+}
+
+.aboutList {
+    width: 50%;
+}
+
+ol {
+    list-style: none;
+}
+
+ol li {
+    font-size: 34px;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d6efc7;
+}
+
+li p {
+    padding-left: 60px;
+    line-height: 30px;
+}
+
+li span {
+    position: absolute;
+    line-height: 25px;
+}
+
+a.active {
+    color: #96bb7c;
+    border-bottom: 1.5px solid #96bb7c;
+}
+
+.dropbtnService {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.4vw;
+    color: #d6efc7;
+    text-decoration: none;
+}
