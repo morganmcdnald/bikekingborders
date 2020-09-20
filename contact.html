@@ -11,21 +11,23 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="nav_links">
-            <li><a><img class="logo" src="images/logosmall.png" style="float: left;" alt="Logo" onclick="document.location.href = '/home.html';"></a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a href="/store.html">Shop</a></li>
-                <li><a href="/routes.html">Routes</a></li>
-                <li><div class="dropdown"><a class="dropbtn" id="service" onclick="myFunction()">Services<i class="fa fa-caret-down"></i></a>
-                    <div class="dropdown-content" id="myDropdown">
-                        <a href="/hire.html">Hire</a>
-                        <a href="/repair.html">Repair</a>
-                      </div>
-                    </div>
-                </li>
-                <a class="cta" href="/contact.html"><button>Contact</button></a>
+    <!-- NavBar -->
+    <div class="nav">
+        <div class="logoGroup">
+            <img class="logo" src="images/logosmall.png" style="float: left;" alt="Logo" onclick="document.location.href = '/home.html';">
+            <p id="toggle2" style="text-align: left;">BIKE KING BORDERS</p>
+        </div>
+        <label for="toggle">&#9776</label>
+        <input type="checkbox" id="toggle">
+        <div class="menu">
+            <a href="/store.html">Store</a>
+            <a href="/hire.html">Hire</a>
+            <a href="/repair.html">Repairs</a>
+            <a href="/gallery.html">Gallery</a>
+            <a href="/routes.html">Routes</a>
+            <a href="/contact.html" class="active">Contact</a>
         </div>
     </div>
+    
 </body>
 </html>
