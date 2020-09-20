@@ -24,12 +24,9 @@ button {
 }
 
 .logo {
-    cursor: pointer;
     width: auto;
-    height: auto;
-    max-width: 10%;
-    max-height: 8%;
-    padding-right: 2%;
+    max-height: 50px;
+    padding-right: 3%;
 }
 
 .nav_links {
@@ -67,11 +64,11 @@ button {
     text-align: left;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     color: #eebb4d;
     text-decoration: none;
     letter-spacing: 10px;
-    padding: 0.6% 0 0 0;
+    padding: 3% 0 0 0;
 }
 
 button {
@@ -227,4 +224,17 @@ li p {
 li span {
     position: absolute;
     line-height: 25px;
+}
+
+a.active {
+    color: #96bb7c;
+    border-bottom: 1.5px solid #96bb7c;
+}
+
+.dropbtnService {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.4vw;
+    color: #d6efc7;
+    text-decoration: none;
 }
