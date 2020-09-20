@@ -218,12 +218,8 @@ footer p {
     }
 
     .content {
-        margin-top: 60%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 135px;
         text-align: center;
-        position: relative;
-        transform: translateY(-50%);
     }
 
     .content .bigLogo {
