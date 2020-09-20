@@ -209,13 +209,21 @@ footer p {
         display: block;
     }
 
+    .showcase {
+        text-align: center;
+    }
+
     .showcase::after {
         height: 50vh;
     }
 
     .content {
-        top: 5%;
-        margin-top: 135px;
+        margin-top: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        position: relative;
+        transform: translateY(-50%);
     }
 
     .content .bigLogo {
@@ -237,28 +245,6 @@ footer p {
     .socials div {
         border-bottom: #eebb4d3f dashed 1px;
         padding: 1.2rem 1rem;
-    }
-}
-
-@media(max-height: 780px) {
-    .content .showcaseText {
-        display: none;
-    }
-
-    .showcase::after {
-        height: 100vh;
-    }
-
-    .content .bigLogo {
-        height: 140px;
-    }
-
-    .content .title {
-        font-size: 1.4rem;
-    }
-
-    .content {
-        margin-top: 10%;
     }
 }
 
