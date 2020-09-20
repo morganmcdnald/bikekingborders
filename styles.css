@@ -99,7 +99,7 @@ label {
     z-index: 3;
     top: 10%;
     left: 50%;
-    margin-top: 105px;
+    margin-top: 195px;
     margin-left: -200px;
     width: 400px;
     height: 350px;
@@ -121,6 +121,56 @@ label {
     color: white;
     line-height: 1.7;
     margin-top: 1rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    color: #d6efc7;
+}
+
+.grid-2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    color: #181818;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.signup {
+    font-size: 2rem;
+    color: #d6efc7;
+    margin-bottom: 3rem;
+}
+
+.bg-light {
+    background: #d6efc7;
+    color: #333;
+}
+
+.bg-dark {
+    background: #181818;
+    color: #d6efc7;
+}
+
+footer {
+    padding: 1.3rem;
+}
+
+footer p {
+    margin: 0;
 }
 
 @media only screen and (max-width: 780px) {
@@ -157,6 +207,58 @@ label {
 
     #toggle:checked + .menu {
         display: block;
+    }
+
+    .showcase::after {
+        height: 50vh;
+    }
+
+    .content {
+        top: 5%;
+        margin-top: 135px;
+    }
+
+    .content .bigLogo {
+        height: 150px;
+    }
+
+    .content .showcaseText {
+        display: none;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .socials div {
+        border-bottom: #eebb4d3f dashed 1px;
+        padding: 1.2rem 1rem;
+    }
+}
+
+@media(max-height: 780px) {
+    .content .showcaseText {
+        display: none;
+    }
+
+    .showcase::after {
+        height: 100vh;
+    }
+
+    .content .bigLogo {
+        height: 140px;
+    }
+
+    .content .title {
+        font-size: 1.4rem;
+    }
+
+    .content {
+        margin-top: 10%;
     }
 }
 
