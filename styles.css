@@ -149,7 +149,7 @@ label {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
-    color: #181818;
+    color: #d6efc7;
 }
 
 .center {
@@ -157,10 +157,13 @@ label {
     margin: auto;
 }
 
+.newsletter {
+    padding: 1.2rem;
+}
+
 .signup {
     font-size: 2rem;
-    color: #d6efc7;
-    margin-bottom: 3rem;
+    color: #181818;
 }
 
 .bg-light {
