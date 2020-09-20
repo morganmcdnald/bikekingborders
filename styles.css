@@ -226,6 +226,10 @@ footer p {
         height: 150px;
     }
 
+    .content .title {
+        font-size: 1.5rem;
+    }
+
     .content .showcaseText {
         display: none;
     }
