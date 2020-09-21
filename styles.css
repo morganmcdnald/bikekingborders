@@ -220,6 +220,16 @@ footer p {
       width: 25%;
       margin-top: 10px;
   }
+
+  .youtubeLink h3 {
+    padding: 2rem;
+    color: #181818;
+  }
+
+  .youtubeLink {
+      padding-bottom: 2rem;
+  }
+
 @media only screen and (max-width: 780px) {
     label {
         display: block;
