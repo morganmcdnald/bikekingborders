@@ -145,6 +145,17 @@ label {
     color: #d6efc7;
 }
 
+.grid-3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    color: #d6efc7;
+}
+
+.grid-3 i {
+    color: #eebb4d;
+}
+
 .grid-2 {
     display: grid;
     grid-gap: 20px;
@@ -230,6 +241,12 @@ footer p {
       padding-bottom: 2rem;
   }
 
+  .copyright {
+      letter-spacing: 2px;
+      font-size: 1rem;
+      color: #eebb4d;
+  }
+
 @media only screen and (max-width: 780px) {
     .btn {
         font-size: 0.8rem;
@@ -300,6 +317,10 @@ footer p {
     }
 
     .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
         grid-template-columns: 1fr;
     }
 
