@@ -66,8 +66,21 @@
     <!-- Newsletter -->
     <section class="newsletter bg-light">
         <div class="signup center">
-            <p>Sign Up For Our Newsletter Here!<br>__________________________</p>
-            <button>submit</button>
+            <p>Sign Up To Our Newsletter!</p>
+            <form id="newsletterForm">
+                <div class="contact-form center">
+                    <div class="input-fields">
+                      <input type="email" class="input" placeholder="example@email.com">
+                      <br>
+                      <input type="button" class="btn" onclick="resetForm()" value="Sign Up">
+                    </div>
+                </div>
+            </form>
+            <script>
+                function resetForm() {
+                    document.getElementById("newsletterForm").reset();
+                }
+            </script>
         </div>
     </section>
 
