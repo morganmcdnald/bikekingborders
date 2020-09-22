@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="/simple-lightbox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
     <link rel="stylesheet" href="/styles.css">
 
     <title>Gallery</title>
@@ -30,24 +30,34 @@
     </div>
 
     <!-- Gallery -->
-    <section class="section-a">
-        <div class="gallery">
-            <a href="/images/aboutBikeSquare.jpg" class="big"><img src="/images/aboutBikeSquare.jpg" alt="Man on Bike"/></a>
-            <a href="/images/aboutBike5Cropped.jpg" class="big"><img src="/images/aboutBike5Cropped.jpg" alt="Man on Bike"/></a>
-            <a href="/images/aboutBike4Square.jpg" class="big"><img src="/images/aboutBike4Square.jpg" alt="People Peddling Bikes"/></a>
-            <a href="/images/aboutBike3Square.jpg" class="big"><img src="/images/aboutBike3Square.jpg" alt="Girl on Bike"/></a>
-            <a href="/images/aboutBike6Square.jpg" class="big"><img src="/images/aboutBike6Square.jpg" alt="Couple on Beach"/></a>
-            <a href="/images/aboutBike2Cropped.jpg" class="big"><img src="/images/aboutBike2Cropped.jpg" alt="Man on Bike"/></a>
+    <div class="gallery-container">
+        <div class="image-gallery">
+            <a href="/images/aboutBike.jpg" class="img-1">
+                <i class="icon ion-md-expand"></i>
+            </a>
+            <a href="/images/aboutBike2.jpg" class="img-2">
+                <i class="icon ion-md-expand"></i>
+            </a>
+            <a href="/images/aboutBike3.jpg" class="img-3">
+                <i class="icon ion-md-expand"></i>
+            </a>
+            <a href="/images/aboutBike4.jpg" class="img-4">
+                <i class="icon ion-md-expand"></i>
+            </a>
+            <a href="/images/aboutBike5.jpg" class="img-5">
+                <i class="icon ion-md-expand"></i>
+            </a>
+            <a href="/images/aboutBike6.jpg" class="img-6">
+                <i class="icon ion-md-expand"></i>
+            </a>
+            <a href="/images/landingBike.jpg" class="img-7">
+                <i class="icon ion-md-expand"></i>
+            </a>
+            <a href="/images/aboutBike7.jpg" class="img-8">
+                <i class="icon ion-md-expand"></i>
+            </a>
         </div>
-    </section>
+    </div>
 
-    <script src="https://ajax.googleapis.com/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="/simple-lightbox.min.js"></script>
-    <script>
-        $(function() {
-            const $gallery = $('.gallery a').simpleLightbox();
-        });
-    </script>
-    
 </body>
 </html>
