@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <script src="dropdown.js"></script>
+    <link rel="stylesheet" href="/simple-lightbox.min.css">
+    <link rel="stylesheet" href="/styles.css">
 
     <title>Gallery</title>
 </head>
@@ -28,6 +28,26 @@
             <a href="/contact.html">Contact</a>
         </div>
     </div>
+
+    <!-- Gallery -->
+    <section class="section-a">
+        <div class="gallery">
+            <a href="/images/aboutBikeSquare.jpg" class="big"><img src="/images/aboutBikeSquare.jpg" alt="Man on Bike"/></a>
+            <a href="/images/aboutBike5Cropped.jpg" class="big"><img src="/images/aboutBike5Cropped.jpg" alt="Man on Bike"/></a>
+            <a href="/images/aboutBike4Square.jpg" class="big"><img src="/images/aboutBike4Square.jpg" alt="People Peddling Bikes"/></a>
+            <a href="/images/aboutBike3Square.jpg" class="big"><img src="/images/aboutBike3Square.jpg" alt="Girl on Bike"/></a>
+            <a href="/images/aboutBike6Square.jpg" class="big"><img src="/images/aboutBike6Square.jpg" alt="Couple on Beach"/></a>
+            <a href="/images/aboutBike2Cropped.jpg" class="big"><img src="/images/aboutBike2Cropped.jpg" alt="Man on Bike"/></a>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/simple-lightbox.min.js"></script>
+    <script>
+        $(function() {
+            const $gallery = $('.gallery a').simpleLightbox();
+        });
+    </script>
     
 </body>
 </html>
