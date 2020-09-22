@@ -101,7 +101,7 @@ label {
     left: 50%;
     margin-top: 195px;
     margin-left: -200px;
-    width: 300px;
+    width: 400px;
     height: 350px;
     text-align: center;
     transition: all 1000ms;
@@ -251,6 +251,7 @@ footer p {
   
   .gallery-container {
       padding-top: 100px;
+      padding-bottom: 50px;
       width: 100%;
       max-width: 120rem;
       margin: auto;
