@@ -21,7 +21,6 @@
     <div class="nav">
         <div class="logoGroup">
             <img class="logo" src="images/logosmall.png" style="float: left;" alt="Logo" onclick="document.location.href = '/home.html';">
-            <p id="toggle2" style="text-align: left;">BIKE KING BORDERS</p>
         </div>
         <label for="toggle">&#9776</label>
         <input type="checkbox" id="toggle">
@@ -66,8 +65,21 @@
     <!-- Newsletter -->
     <section class="newsletter bg-light">
         <div class="signup center">
-            <p>Sign Up For Our Newsletter Here!<br>__________________________</p>
-            <button>submit</button>
+            <p>Sign Up To Our Newsletter!</p>
+            <form id="newsletterForm">
+                <div class="contact-form center">
+                    <div class="input-fields">
+                      <input type="email" class="input" placeholder="example@email.com">
+                      <br>
+                      <input type="button" class="btn" onclick="resetForm()" value="Sign Up">
+                    </div>
+                </div>
+            </form>
+            <script>
+                function resetForm() {
+                    document.getElementById("newsletterForm").reset();
+                }
+            </script>
         </div>
     </section>
 
@@ -109,9 +121,36 @@
         </div>
     </section>
 
+    <!-- YouTube Video -->
+    <section class="youtubeLink center bg-light">
+        <h3>An Interesting Title</h3>
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/orXAg5dIMa8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="center bg-dark">
-        <p>Bike King Borders &copy; 2020</p>
+        <div class="container grid-3 center">
+            <div>
+                <i class="fas fa-store fa-2x"></i>
+                <h3>Address</h3>
+                <p>123 Wheel Drive<br>Galashiels<br>TD1 7DE</p>
+            </div>
+
+            <div>
+                <div><i class="fas fa-phone fa-2x"></i></div>
+                <h3>Contact</h3>
+                <p>(01234) 567 567<br><br>admin@bikekingborders.com</p>
+            </div>
+
+            <div>
+                <div><i class="far fa-clock fa-2x"></i></div>
+                <h3>Opening Hours</h3>
+                <p>Mon-Fri: 0900-1700<br>Sat: 0900-1900<br>Sun: 1000-1600</p>
+            </div>
+        </div>
+        <p class="copyright">Bike King Borders &copy; 2020</p>
     </footer>
 
 </body>

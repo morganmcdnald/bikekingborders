@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
 
 html, body {
     background-color: #184d47;
@@ -18,7 +18,7 @@ html {
     width: 100%;
     height: 70px;
     line-height: 70px;
-    z-index: 2;
+    z-index: 1000;
 }
 
 .menu {
@@ -145,6 +145,17 @@ label {
     color: #d6efc7;
 }
 
+.grid-3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    color: #d6efc7;
+}
+
+.grid-3 i {
+    color: #eebb4d;
+}
+
 .grid-2 {
     display: grid;
     grid-gap: 20px;
@@ -163,8 +174,11 @@ label {
 }
 
 .signup {
+    display: grid;
+    grid-gap: 20px;
     font-size: 2rem;
     color: #181818;
+    grid-template-columns: 1fr;
 }
 
 .bg-light {
@@ -189,8 +203,206 @@ footer {
 footer p {
     margin: 0;
 }
+  
+  .input-fields .input {
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 0;
+    background: transparent;
+    text-align: center;
+    border: 0px;
+    border-bottom: 2px solid #181818;
+    padding: 10px;
+    color: #181818;
+    width: 70%;
+  }
+  
+  .btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+      background: transparent;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+      border: 2px solid #184d47;
+      color: #181818;
+      cursor: pointer;
+      text-transform: uppercase;
+      width: 25%;
+      margin-top: 10px;
+  }
+
+  .youtubeLink h3 {
+    padding: 2rem;
+    color: #181818;
+  }
+
+  .youtubeLink {
+      padding-bottom: 2rem;
+  }
+
+  .copyright {
+      letter-spacing: 2px;
+      font-size: 1rem;
+      color: #eebb4d;
+  }
+
+  /* Gallery */
+  
+  .gallery-container {
+      padding-top: 70px;
+      padding-bottom: 50px;
+      width: 100%;
+      max-width: 120rem;
+      margin: auto;
+      padding-left: 0;
+      padding-right: 1.5rem;
+  }
+
+  .gallery-container h1 {
+      color: #eebb4d;
+      font-size: 3rem;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 3px;
+  }
+
+  .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 1.5rem;
+      grid-template-areas:
+                'img-2 img-6 img-5 img-5'
+                'img-2 img-4 img-3 img-1'
+                'img-8 img-8 img-7 img-1';                
+  }
+
+  .image-gallery a {
+      width: 100%;
+      height: 25rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+  }
+
+  .image-gallery a i {
+      color: rgba(255, 255, 255, .6);
+      font-size: 3rem;
+      position: relative;
+      z-index: 100;
+      padding: 1rem 3rem;
+      border: 2px solid rgba(255, 255, 255, .6);
+      border-radius: .4rem;
+      opacity: 0;
+      transition: opacity .5s;
+  }
+
+  .image-gallery a::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      opacity: 0;
+      transition: opacity .5s;
+  }
+
+  .image-gallery a:hover i, .image-gallery a:hover::before {
+      opacity: 1;
+  }
+
+  .img-1 {
+      grid-area: img-1;
+      min-height: 51.5rem;
+      background-image: url("/images/aboutBike.jpg");
+  }
+
+  .img-2 {
+      grid-area: img-2;
+      min-height: 51.5rem;
+      background-image: url("/images/aboutBike2.jpg");
+  }
+
+  .img-3 {
+      grid-area: img-3;
+      background-image: url("/images/aboutBike3.jpg");
+  }
+
+  .img-4 {
+      grid-area: img-4;
+      background-image: url("/images/aboutBike4.jpg");
+  }
+
+  .img-5 {
+      grid-area: img-5;
+      background-image: url("/images/aboutBike5.jpg");
+  }
+
+  .img-6 {
+      grid-area: img-6;
+      background-image: url("/images/aboutBike6.jpg");
+  }
+
+  .img-7 {
+      grid-area: img-7;
+      background-image: url("/images/landingBike.jpg");
+  }
+
+  .img-8 {
+      grid-area: img-8;
+      background-image: url("/images/aboutBike7.jpg");
+  }
+
+  @media screen and (max-width: 900px) {
+      .image-gallery {
+            grid-template-areas:
+
+                'img-2 img-2 img-6 img-6'
+                'img-2 img-2 img-1 img-1'
+                'img-4 img-4 img-1 img-1'
+                'img-8 img-8 img-8 img-8'
+                'img-5 img-5 img-5 img-5'
+                'img-3 img-3 img-7 img-7';
+      }
+  }
+
+  @media screen and (max-width: 700px) {
+    .image-gallery {
+          grid-template-areas:
+             /* 'img-2 img-6 img-5 img-5'
+              'img-2 img-4 img-3 img-1'
+              'img-8 img-8 img-7 img-1'; 5 4 3 7*/
+
+              'img-2 img-2 img-2 img-2'
+              'img-6 img-6 img-6 img-6'
+              'img-5 img-5 img-5 img-5'
+              'img-8 img-8 img-8 img-8'
+              'img-4 img-4 img-4 img-4'
+              'img-1 img-1 img-1 img-1'
+              'img-3 img-3 img-3 img-3'
+              'img-7 img-7 img-7 img-7';
+    }
+
+    .image-gallery a, .img-1, .img-2 {
+        min-height: 30rem;
+        height: 30rem;
+    }
+}
+  
 
 @media only screen and (max-width: 780px) {
+    .btn {
+        font-size: 0.8rem;
+    }
+
     label {
         display: block;
         cursor: pointer;
@@ -252,10 +464,19 @@ footer p {
     }
 
     .grid-4 {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 5px;
+    }
+
+    .grid-4 p {
+        display: none;
     }
 
     .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
         grid-template-columns: 1fr;
     }
 
@@ -263,21 +484,23 @@ footer p {
         max-width: 600px;
     }
 
-}
-
-@media only screen and (min-width: 1100px) {
-    #toggle2 {
-        display: block;
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
     }
 
-    .logo {
-        padding-right: 30px;
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
-    .logoGroup p {
-        font-weight: 300;
-        letter-spacing: 10px;
-        color: #eebb4d;
-        opacity: 0.9;
+    .gallery-container {
+        padding-right: 0;
     }
+
 }
