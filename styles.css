@@ -256,7 +256,6 @@ footer p {
       max-width: 120rem;
       margin: auto;
       padding-left: 0;
-      padding-right: 1.5rem;
   }
 
   .gallery-container h1 {
@@ -396,6 +395,12 @@ footer p {
         height: 30rem;
     }
 }
+
+@media only screen and (max-width: 650px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
   
 
 @media only screen and (max-width: 780px) {
@@ -473,10 +478,6 @@ footer p {
     }
 
     .grid-2 {
-        grid-template-columns: 1fr;
-    }
-
-    .grid-3 {
         grid-template-columns: 1fr;
     }
 
