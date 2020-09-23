@@ -21,6 +21,16 @@ html {
     z-index: 1000;
 }
 
+.routes-nav {
+    position: fixed;
+    margin-top: 70px;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    z-index: 1000;
+}
+
 .menu {
     padding: 0 30px 0 0;
     background-color: #184d47;
@@ -28,7 +38,14 @@ html {
     z-index: 1;
 }
 
-.menu a {
+.routes-menu {
+    padding: 0 30px 0 0;
+    background-color: #1e5f58;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
+    z-index: 1;
+}
+
+.menu a, .routes-menu a {
     text-decoration: none;
     color: #d6efc7;
     margin: 0 10px;
@@ -37,7 +54,7 @@ html {
     transition: all 0.3s ease 0s;
 }
 
-.menu a:hover{
+.menu a:hover, .routes-menu a:hover{
     color: #eebb4d;
 }
 
@@ -422,7 +439,7 @@ footer p {
 /* Routes Page */
 
 .routes {
-    padding: 5rem 0;
+    padding: 9rem 0;
     overflow-x: hidden;
 }
 
@@ -684,6 +701,20 @@ footer p {
 }
 
 @media screen and (max-width: 496px) {
+    .routes-menu a {
+        font-size: 8px;
+        padding: 3px;
+        margin: 0;
+    }
+
+    .events .card, .routes .card, .landmarks .card {
+        width: 20rem;
+    }
+
+    .routes-menu {
+        padding: 0;
+    }
+
     .form-heading {
         top: 2rem;
     }
@@ -867,6 +898,10 @@ footer p {
 
     .gallery-container {
         padding-right: 0;
+    }
+
+    .routes-menu a {
+        font-size: 15px;
     }
 
 }
