@@ -182,6 +182,42 @@ label {
     grid-template-columns: 1fr;
 }
 
+.input-fields input {
+    position: relative;
+    align-items: center;
+    width: 80%;
+    padding: 1rem 0;
+    margin-top: .5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #181818;
+    font-size: 1.8rem;
+    background-color: #d6efc7;
+    color: #181818;
+    transition: border-color 650ms;
+}
+
+.input-fields input:focus {
+    border-color: #f19720;
+}
+
+.contact-form button {
+    margin: 1.5rem auto;
+    padding: .5rem 4rem;
+    background: linear-gradient(to left, #184d47, #2c8b80);
+    border: none;
+    color: #d6efc7;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 3rem;
+}
+
+.contact-form button:focus, .contact-form button:hover {
+    background: linear-gradient(to right, #184d47, #2c8b80);
+}
+
 .bg-light {
     background: #d6efc7;
     color: #333;
