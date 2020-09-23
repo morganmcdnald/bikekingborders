@@ -360,6 +360,27 @@ footer p {
       background-image: url("/images/aboutBike7.jpg");
   }
 
+  .googlemap {
+      width: 100%;
+  }
+
+  .map {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+    padding-left: 0;
+}
+
+  .map h1 {
+    color: #eebb4d;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
   @media screen and (max-width: 900px) {
       .image-gallery {
             grid-template-areas:
