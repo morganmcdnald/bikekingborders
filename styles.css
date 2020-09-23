@@ -5,7 +5,6 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0;
-    overflow-x: hidden;
 }
 
 html {
@@ -387,11 +386,12 @@ footer p {
 
 .routes {
     padding: 5rem 0;
+    overflow-x: hidden;
 }
 
-.routes .heading {
+.routes .heading, .landmarks .heading {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 300;
     letter-spacing: 3px;
     margin-right: -3px;
@@ -401,14 +401,30 @@ footer p {
     position: relative;
 }
 
-.routes .card-wrapper {
+.landmarks .heading {
+    margin-bottom: 1rem;
+}
+
+.landmarks .subheading {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #eebb4d;
+    position: relative;
+}
+
+.card-wrapper {
     display: flex;
     align-items: center;
     align-content: center;
     flex-direction: column;
 }
 
-.routes .card {
+.card {
     width: 32rem;
     height: auto;
     background-color: #d6efc7;
@@ -421,7 +437,11 @@ footer p {
     border-radius: 2rem;
 }
 
-.routes .card .card-img {
+.landmarks .card {
+    width: 24rem;
+}
+
+.card .card-img {
     width: 100%;
     height: 20rem;
     object-fit: cover;
@@ -429,27 +449,27 @@ footer p {
     border-radius: 2rem;
 }
 
-.routes .card h1 {
+.card h1 {
     font-size: 2rem;
     color: #181818;
     margin: .5rem 0;
 }
 
-.routes .card .title {
+.card .title {
     font-size: 1.5rem;
     color: #181818;
     margin: .5rem 0;
     text-align: center;
 }
 
-.routes .card .info {
+.card .info {
     font-size: 1.1rem;
     color: #181818;
     margin: 1rem 1rem;
     text-align: center;
 }
 
-.routes .card .btn {
+.routes .card .btn, .landmarks .card .btn {
     padding: 1rem 2.5rem;
     background-color: #184d47;
     border-radius: 2rem;
@@ -461,39 +481,30 @@ footer p {
     transition: all .5s;
 }
 
-.routes .card .btn:hover {
+.routes .card .btn:hover, .landmarks .card .btn:hover {
     transform: translateY(-2px);
     box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
 }
 
-.routes .card .btn:active {
+.routes .card .btn:active, .landmarks .card .btn:active {
     transform: translateY(0);
     box-shadow: none;
 }
 
 @media screen and (min-width: 700px) {
-    .routes .card-wrapper {
+    .card-wrapper {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
 
-    .routes .card {
+    .card {
         margin: 2rem;
         transition: transform .5s;
     }
 
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    .routes .card:hover {
+    .routes .card:hover, .landmarks .card:hover {
         transform: scale(1.05);
     }
 }
