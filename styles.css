@@ -22,6 +22,12 @@ html {
     z-index: 2000;
 }
 
+.landing-menu {
+    padding: 0 30px 0 0;
+    background-color: transparent;
+    z-index: 1000;
+}
+
 .routes-nav {
     position: fixed;
     margin-top: 70px;
@@ -46,7 +52,7 @@ html {
     z-index: 1;
 }
 
-.menu a, .routes-menu a {
+.menu a, .routes-menu a, .landing-menu a {
     text-decoration: none;
     color: #d6efc7;
     margin: 0 10px;
@@ -55,7 +61,7 @@ html {
     transition: all 0.3s ease 0s;
 }
 
-.menu a:hover, .routes-menu a:hover{
+.menu a:hover, .routes-menu a:hover, .landing-menu a:hover {
     color: #eebb4d;
 }
 
@@ -94,7 +100,7 @@ label {
     content: '';
     height: 80vh;
     width: 100%;
-    background-image: url(/images/landingBike.jpg);
+    background-image: url(/images/landingPic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -842,31 +848,31 @@ footer p {
         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
     }
 
-    .menu {
+    .menu, .landing-menu {
         text-align: center;
         width: 100%;
         display: none;
     }
 
-    .menu a {
+    .menu a, .landing-menu a {
         display: block;
         background-color: #143f3a;
         border-bottom: 1px solid #eebb4d;
         margin: 0;
     }
 
-    .menu a.active {
+    .menu a.active, .landing-menu a.active {
         padding-bottom: 0;
         color: #96bb7c;
         border-bottom: 1.5px solid #eebb4d;
     }
 
-    .menu a:hover{
+    .menu a:hover, .landing-menu a:hover {
         background-color: #10332f;
         color: #eebb4d;
     }
 
-    #toggle:checked + .menu {
+    #toggle:checked + .menu, #toggle:checked + .landing-menu {
         display: block;
     }
 
