@@ -23,12 +23,12 @@
                     </a>
                 </div>
 
-                <div class="menu-icons open">
+                <div class="menu-icons open" onclick="hideForm()">
                     <i class="icon ion-md-menu"></i>
                 </div>
 
                 <ul class="nav-list">
-                    <div class="menu-icons close">
+                    <div class="menu-icons close" onclick="showForm()">
                         <i class="icon ion-md-close"></i>
                     </div>
                     <li class="nav-item">
@@ -56,7 +56,7 @@
 
     <main>
         <div class="contactWrapper">
-            <div class="form-container">
+            <div class="form-container" id="form">
                 <span class="form-heading">Contact Us</span>
                 <form action="">
                     <div class="input-group">
@@ -117,6 +117,25 @@
         <p class="copyright">Bike King Borders &copy; 2020</p>
     </footer>
     <script type="text/javascript" src="/scripts.js"></script>
+    <script>
+        function hideForm() {
+            var x = document.getElementById("form");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function showForm() {
+            var x = document.getElementById("form")
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
     
 </body>
 </html>
