@@ -23,12 +23,12 @@
                     </a>
                 </div>
 
-                <div class="menu-icons open">
+                <div class="menu-icons open" onclick="hideNav()">
                     <i class="icon ion-md-menu"></i>
                 </div>
 
                 <ul class="nav-list">
-                    <div class="menu-icons close">
+                    <div class="menu-icons close" onclick="showNav()">
                         <i class="icon ion-md-close"></i>
                     </div>
                     <li class="nav-item">
@@ -56,7 +56,7 @@
 
     <main>
         <!-- Local Area Nav -->
-        <div class="routes-nav">
+        <div class="routes-nav" id="routes-nav">
             <div class="routes-menu">
                 <a href="#routes">Trails</a>
                 <a href="#events">Cycling Events</a>
@@ -266,6 +266,29 @@
         <p class="copyright">Bike King Borders &copy; 2020</p>
     </footer>
     <script type="text/javascript" src="/scripts.js"></script>
+    <script>
+        function hideNav() {
+            var x = document.getElementById("routes-nav");
+            var y = document.getElementById("routes")
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+                y.style.paddingTop = "18.5rem";
+            }
+        }
+
+        function showNav() {
+            var x = document.getElementById("routes-nav");
+            var y = document.getElementById("routes")
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+                y.style.paddingTop = "4rem";
+            }
+        }
+    </script>
     
 </body>
 </html>
