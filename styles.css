@@ -261,12 +261,11 @@ footer p {
   /* Gallery */
   
   .gallery-container {
-      padding-top: 70px;
-      padding-bottom: 50px;
+      padding-top: 12rem;
+      padding-bottom: 10rem;
       width: 100%;
-      max-width: 120rem;
+      max-width: 250rem;
       margin: auto;
-      padding-left: 0;
   }
 
   .gallery-container h1 {
@@ -276,6 +275,8 @@ footer p {
       text-align: center;
       letter-spacing: 3px;
       margin-right: -3px;
+      padding-bottom: 2rem;
+      font-size: 3.5rem;
   }
 
   .image-gallery {
@@ -291,7 +292,7 @@ footer p {
 
   .image-gallery a {
       width: 100%;
-      height: 25rem;
+      height: 40rem;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -307,7 +308,7 @@ footer p {
       font-size: 3rem;
       position: relative;
       z-index: 100;
-      padding: 1rem 3rem;
+      padding: 1rem 1rem;
       border: 2px solid rgba(255, 255, 255, .6);
       border-radius: .4rem;
       opacity: 0;
@@ -332,13 +333,13 @@ footer p {
 
   .img-1 {
       grid-area: img-1;
-      min-height: 51.5rem;
+      min-height: 81.5rem;
       background-image: url("/images/aboutBike.jpg");
   }
 
   .img-2 {
       grid-area: img-2;
-      min-height: 51.5rem;
+      min-height: 81.5rem;
       background-image: url("/images/aboutBike2.jpg");
   }
 
@@ -813,8 +814,8 @@ footer p {
     }
 
     .image-gallery a, .img-1, .img-2 {
-        min-height: 30rem;
-        height: 30rem;
+        min-height: 40rem;
+        height: 40rem;
     }
 
 }
@@ -924,7 +925,7 @@ footer p {
     }
 
     .gallery-container {
-        padding-right: 0;
+        padding-right: auto;
     }
 
     .routes-menu a {
