@@ -77,8 +77,8 @@
                 <p>Sign up to our monthly mailing list in order to be the first to hear our news and have exclusive access to a number of discounts and competitions!</p>
                 <form action="">
                     <div class="email-box">
-                        <i class="fas fa-envelope fa-2x"></i>
-                        <input class="tbox" type="email" placeholder="example@email.com" required>
+                        <i class="fas fa-envelope fa-2x" onclick="maximiseBox()"></i>
+                        <input id="tbox" class="tbox" type="email" placeholder="example@email.com" required>
                         <button class="btn" name="button" onclick="document.location.href = '/index.html';">Subscribe</button>
                     </div>
                 </form>
@@ -172,5 +172,12 @@
     </footer>
 
     <script type="text/javascript" src="/scripts.js"></script>
+    <script>
+        function maximiseBox() {
+            var x = document.getElementById("tbox");
+            x.style.width = "75%";
+            x.style.paddingLeft = "1rem";
+        }
+    </script>
 </body>
 </html>
