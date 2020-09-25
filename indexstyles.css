@@ -94,6 +94,7 @@ nav {
     justify-content: center;
     z-index: 1500;
     transition: all 650ms ease-in-out;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.40);
 }
 
 .nav-list.active {
@@ -103,15 +104,17 @@ nav {
 .close {
     position: absolute;
     top: 1rem;
-    left: 1.5rem;
+    right: 1.5rem;
 }
 
 .nav-item {
-    margin: 1.5rem 0;
+    margin: 3rem 0;
+    font-weight: 500;
 }
 
 .nav-link {
     font-size: 1.6rem;
+    margin-bottom: 6rem;
     text-transform: uppercase;
     color: rgba(0, 0, 0, .7);
 }
