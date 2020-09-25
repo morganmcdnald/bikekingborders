@@ -13,21 +13,6 @@ html {
     font-weight: 500;
 }
 
-.nav {
-    position: fixed;
-    text-align: right;
-    width: 100%;
-    height: 70px;
-    line-height: 70px;
-    z-index: 2000;
-}
-
-.landing-menu {
-    padding: 0 30px 0 0;
-    background-color: transparent;
-    z-index: 1000;
-}
-
 .routes-nav {
     position: fixed;
     margin-top: 70px;
@@ -38,13 +23,6 @@ html {
     z-index: 1000;
 }
 
-.menu {
-    padding: 0 30px 0 0;
-    background-color: #184d47;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
-    z-index: 1000;
-}
-
 .routes-menu {
     padding: 0 30px 0 0;
     background-color: #1e5f58;
@@ -52,7 +30,7 @@ html {
     z-index: 1;
 }
 
-.menu a, .routes-menu a, .landing-menu a {
+.routes-menu a {
     text-decoration: none;
     color: #d6efc7;
     margin: 0 10px;
@@ -61,39 +39,8 @@ html {
     transition: all 0.3s ease 0s;
 }
 
-.menu a:hover, .routes-menu a:hover, .landing-menu a:hover {
+.routes-menu a:hover {
     color: #eebb4d;
-}
-
-.menu a.active {
-    padding-bottom: 7px;
-    color: #96bb7c;
-    border-bottom: 1.5px solid #96bb7c;
-}
-
-.logo {
-    width: auto;
-    max-height: 50px;
-    padding-left: 40px;
-    padding-top: 10px;
-    padding-right: 20px;
-    cursor: pointer;
-}
-
-label {
-    padding: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    color: #eebb4d;
-    display: none;
-}
-
-#toggle {
-    display: none;
-}
-
-#toggle2 {
-    display: none;
 }
 
 .showcase::after {
