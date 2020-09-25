@@ -260,6 +260,7 @@ nav {
 
 .grid-3 p {
     padding: 1rem;
+    font-weight: 500;
 }
 
 .grid-3 h3 {
@@ -397,7 +398,7 @@ footer p {
 
   .copyright {
       letter-spacing: 2px;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       padding-top: .5rem;
       color: #eebb4d;
   }
