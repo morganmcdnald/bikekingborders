@@ -188,7 +188,6 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     color: #184d47;
     padding-left: 3rem;
-    padding-right: 3rem;
 }
 
 .grid-4 a:link {
@@ -294,20 +293,27 @@ nav {
     position: relative;
 }
 
-.newsletter .container {
+.newsContainer {
+    width: 100%;
+    max-width: 175rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.newsletter .newsContainer {
     padding: 4rem 4rem;
     text-align: center;
     color: #181818;
 }
 
-.newsletter .container p {
+.newsletter .newsContainer p {
     max-width: 60%;
     margin: 4rem auto;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.newsletter .container h1 {
+.newsletter .newsContainer h1 {
     max-width: 60%;
     margin: 0rem auto;
     font-size: 3rem;
@@ -404,19 +410,18 @@ footer p {
   }
 
   /* Media Queries */
-  @media screen and (min-width: 350px) {
-      .main-message {
-          transform: translateY(20%);
+   @media screen and (max-width: 350px) {
+      .about-section i {
+          display: none;
       }
 
-      .about {
-          height: 40vh;
+      .grid-4 {
+          margin-right: 0;
       }
 
-      .about-section {
-          width: 80%;
-        transform: translate(10%, 30%);
-    }
+      .grid-4 i {
+          font-size: 5rem;
+      }
   }
 
   @media screen and (max-width: 825px) {
@@ -571,7 +576,39 @@ footer p {
     }
 
     .grid-2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
+    }
+
+    .about {
+        height: 45vh;
+    }
+
+
+    .about-section {
+        transform: translate(0, 0%);
+    }
+    
+    .about-section {
+        width: 100%;
+        max-width: 60rem;
+        color: #fafafa;
+        text-transform: uppercase;
+        padding-left: .5rem;
+    }
+    
+    .about-section h3 {
+        font-size: 1.7rem;
+        padding-top: .3rem;
+    }
+    
+    .about-section p {
+        padding-top: .4rem;
+        text-transform: none;
+        font-size: 1.4rem;
+    }
+
+    .about-section i {
+        font-size: 6rem;
     }
 
     .container {
@@ -593,13 +630,13 @@ footer p {
         height: 100%;
     }
 
-    .newsletter .container p {
+    .newsletter .newsContainer p {
         max-width: 80%;
         margin: 3rem auto;
         font-size: 1.3rem;
     }
     
-    .newsletter .container h1 {
+    .newsletter .newsContainer h1 {
         max-width: 70%;
         font-size: 2rem;
     }
