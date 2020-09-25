@@ -531,7 +531,6 @@ footer p {
         .newsletter {
             background: url(/images/nletterwide.png);
             background-size: cover;
-            position: relative;
         }
 
         .about-section {
