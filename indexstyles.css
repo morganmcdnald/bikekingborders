@@ -419,6 +419,13 @@ footer p {
     }
   }
 
+  @media screen and (max-width: 825px) {
+    .email-box .tbox {
+        width: 70%;
+        padding-left: 1.5rem;
+    }
+  }
+
   @media screen and (min-width: 825px) {
       header {
           height: 8rem;
@@ -503,6 +510,7 @@ footer p {
         .btn {
             font-size: 2rem;
         }
+        
     }
 
     @media screen and (min-width:825px) and (max-width: 1350px) {
