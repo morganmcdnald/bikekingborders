@@ -238,15 +238,12 @@ nav {
 }
 
 .about-section h3 {
-    font-size: 1.6rem;
-}
-
-.about-section h1 {
-    font-size: 4rem;
-    margin: 1rem 0;
+    font-size: 2.5rem;
+    padding-top: .3rem;
 }
 
 .about-section p {
+    padding-top: 1.5rem;
     text-transform: none;
 }
 
@@ -288,43 +285,71 @@ nav {
 }
 
 /* Newsletter Form */
-.input-fields input {
+.newsletter {
+    background: url(/images/nletter.png);
+    background-size: cover;
     position: relative;
-    align-items: center;
-    width: 80%;
-    padding: 1rem 0;
-    margin-top: .5rem;
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: #181818;
-    font-size: 1.8rem;
-    background-color: #d6efc7;
+}
+
+.newsletter .container {
+    padding: 4rem 4rem;
+    text-align: center;
     color: #181818;
-    transition: border-color 650ms;
 }
 
-.input-fields input:focus {
-    border-color: #f19720;
+.newsletter .container p {
+    max-width: 60%;
+    margin: 4rem auto;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
-.signup p {
-    font-size: 2.5rem;
+.newsletter .container h1 {
+    max-width: 60%;
+    margin: 0rem auto;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
-/* Newsletter Button */
-.contact-form button {
-    margin: 1.5rem auto;
-    padding: .5rem 4rem;
-    background: linear-gradient(to left, #184d47, #2c8b80);
+.email-box {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.email-box i {
+    background: #184d47;
+    color: #eebb4d;
+    width: 4rem;
+    line-height: 4rem;
+}
+
+.email-box .tbox, .email-box .btn {
     border: none;
-    color: #d6efc7;
-    font-size: 2rem;
-    cursor: pointer;
-    border-radius: 3rem;
+    outline: none;
 }
 
-.contact-form button:focus, .contact-form button:hover {
-    background: linear-gradient(to right, #184d47, #2c8b80);
+.email-box .tbox {
+    font-family: "Montserrat", sans-serif;
+    width: 0;
+    transition: width 800ms;
+}
+
+.email-box:hover > .tbox,.tbox:focus {
+    width: 75%;
+    padding: 0 1rem;
+}
+
+.email-box .btn {
+    background: #184d47;
+    color: #eebb4d;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 0;
+    margin-top: 0;
 }
 
 .bg-light {
@@ -380,6 +405,10 @@ footer p {
       .main-message {
           transform: translateY(20%);
       }
+
+      .about-section {
+        transform: translateY(20%);
+    }
   }
 
   @media screen and (min-width: 825px) {
@@ -404,6 +433,7 @@ footer p {
           right: initial;
           flex-direction: row;
           transition: initial;
+          box-shadow: none;
       }
 
       .menu-icons {
@@ -445,7 +475,7 @@ footer p {
           height: 60vh;
       }
 
-      .main-message {
+      .main-message, .about-section {
           transform: translate(50%, 100%);
           max-width: 60rem;
       }
@@ -471,12 +501,21 @@ footer p {
         .main-message {
             transform: translate(10%, 80%);
         }
-    } 
+    }
+    
+    @media screen and (min-width: 1350px) {
+        .newsletter {
+            background: url(/images/nletterwide.png);
+            background-size: cover;
+            position: relative;
+        }
+    }
 
     @media screen and (min-width: 1200px) {
         .nav-link {
             font-size: 2rem;
         }
+        
     }
 
   @media only screen and (max-width: 650px) {
