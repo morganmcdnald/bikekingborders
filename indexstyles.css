@@ -642,3 +642,17 @@ footer p {
     }
 
 }
+
+@media screen and (max-height: 1000px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .main-message {
+        transform: translate(20%, 60%);
+    }
+
+    .about {
+        height: 60vh;
+    }
+}
