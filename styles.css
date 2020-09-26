@@ -177,21 +177,6 @@ html {
     border-color: #f19720;
 }
 
-.contact-form button {
-    margin: 1.5rem auto;
-    padding: .5rem 4rem;
-    background: linear-gradient(to left, #184d47, #2c8b80);
-    border: none;
-    color: #d6efc7;
-    font-size: 2rem;
-    cursor: pointer;
-    border-radius: 3rem;
-}
-
-.contact-form button:focus, .contact-form button:hover {
-    background: linear-gradient(to right, #184d47, #2c8b80);
-}
-
 .bg-light {
     background: #d6efc7;
     color: #333;
@@ -460,12 +445,20 @@ footer p {
     border-radius: 2rem;
 }
 
+.store .card {
+    border-radius: 0;
+}
+
 .events .card {
     width: 30rem;
     background-color: #184d47;
 }
 
-.events .card h1 {
+.store .card {
+    background-color: #184d47;
+}
+
+.events .card h1, .store .card h1 {
     padding: .5rem;
 }
 
@@ -485,7 +478,6 @@ footer p {
     width: 100%;
     height: 40rem;
     object-fit: cover;
-    border-radius: 2rem;
 }
 
 .saleContainer {
@@ -512,6 +504,23 @@ footer p {
     color: #181818;
     margin: 1rem 1rem;
     text-align: center;
+}
+
+.store .card h1 {
+    color: #eebb4d;
+    font-weight: 500;
+}
+
+.card .type {
+    font-size: 2rem;
+    color: #eebb4d;
+}
+
+.card .price {
+    font-size: 1.7rem;
+    color: #eebb4d;
+    padding-top: .3rem;
+    padding-bottom: .8rem;
 }
 
 .events .card .title, .events .card .info, .events .card h1 {
@@ -615,12 +624,13 @@ footer p {
     height: 100%;
 }
 
+
 .input-group {
     width: 90%;
     margin: 0 auto;
     position: relative;
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
 
 .input-group input {
@@ -691,7 +701,7 @@ footer p {
         transition: transform .5s;
     }
 
-    .routes .card:hover, .landmarks .card:hover, .events .card:hover {
+    .routes .card:hover, .landmarks .card:hover, .events .card:hover, .store .card:hover {
         transform: scale(1.05);
     }
 }
@@ -942,6 +952,21 @@ footer p {
 
     .routes-menu a {
         font-size: 15px;
+    }
+
+}
+
+@media screen and (max-height: 1025px) and (min-width: 1201px) {
+    .form-container form {
+        padding: 20% 0;
+    }
+
+    .form-container {
+        height: 90%;
+    }
+
+    .contactWrapper {
+        padding-top: 6rem;
     }
 
 }
