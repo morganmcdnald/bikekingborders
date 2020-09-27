@@ -424,6 +424,17 @@ footer p {
     position: relative;
 }
 
+.infoHeading {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #eebb4d;
+    padding-left: 23%;
+}
+
 .landmarks, .events, .store {
     overflow-x: hidden;
 }
@@ -471,7 +482,7 @@ footer p {
 }
 
 .store {
-    background: linear-gradient(135deg, rgba(24,77,71,0.9) 0%, rgba(30,95,88, 0.8) 100%), url(/images/storebg3.png) no-repeat;
+    background: linear-gradient(135deg, rgba(24,77,71,0.9) 0%, rgba(30,95,88, 0.8) 100%), url(/images/storebg4.png) no-repeat;
     background-size: cover;
 }
 
