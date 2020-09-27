@@ -265,6 +265,30 @@ footer p {
       font-size: 3.5rem;
   }
 
+  .store h2 {
+    color: #eebb4d;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-right: -2px;
+    max-width: 80%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.store h3 {
+    color: #eebb4d;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-right: -2px;
+    max-width: 80%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
   .image-gallery {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
