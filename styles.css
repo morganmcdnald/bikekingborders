@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
 
 html, body {
+    background: linear-gradient(135deg, rgba(24,77,71,0.9) 0%, rgba(30,95,88, 0.8) 100%);
     background-color: #184d47;
     width: 100%;
     height: 100%;
@@ -432,7 +433,7 @@ footer p {
     margin-bottom: 1rem;
     text-align: center;
     color: #eebb4d;
-    padding-left: 23%;
+    padding-left: 20%;
 }
 
 .landmarks, .events, .store {
@@ -492,6 +493,7 @@ footer p {
     background-color: #fafafa;
     align-items: left;
     justify-content: left;
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.40);
 }
 
 .events .card {
@@ -569,14 +571,14 @@ footer p {
     color: #d6efc7;
 }
 
-.routes .card .btn, .landmarks .card .btn, .events .card .btn {
-    padding: 1rem .5rem;
+.routes .card .btn, .landmarks .card .btn, .events .card .btn, .store .card .btn {
+    padding: .5rem .5rem;
     background-color: #184d47;
     border-radius: 2rem;
     margin: 1rem;
     text-transform: uppercase;
     color: #eebb4d;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-decoration: none;
     transition: all .5s;
 }
@@ -602,12 +604,12 @@ footer p {
     font-size: 25px;
   }
 
-.routes .card .btn:hover, .landmarks .card .btn:hover, .events .card .btn:hover {
+.routes .card .btn:hover, .landmarks .card .btn:hover, .events .card .btn:hover, .store .card .btn:hover {
     transform: translateY(-2px);
     box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
 }
 
-.routes .card .btn:active, .landmarks .card .btn:active, .events .card .btn:active {
+.routes .card .btn:active, .landmarks .card .btn:active, .events .card .btn:active, .store .card .btn:active {
     transform: translateY(0);
     box-shadow: none;
 }
@@ -728,6 +730,64 @@ footer p {
 
 .input-group button:focus, .input-group button:hover {
     background: linear-gradient(to right, #f19720, #eebb4d);
+}
+
+.table{
+	width: 70%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    margin-bottom: 5%;
+}
+
+.table td,.table th{
+  padding:17px 15px;
+  border: 2px solid rgba(0, 0, 0, .2);
+  text-align: center;
+  font-size:16px;
+}
+
+.table th{
+    border: none;
+    border-radius: 8px;
+	background-color: #eebb4d;
+    color: #181818;
+}
+
+.table tbody tr {
+    background-color: #d6efc7;
+    color: #181818;
+}
+
+@media(max-width: 824px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
 }
 
 @media only screen and (min-width: 700px) {
