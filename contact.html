@@ -3,31 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ion Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <script src="dropdown.js"></script>
-    
+    <link rel="stylesheet" href="/navstyles.css">
+    <link rel="icon" href="/images/icon.png">
     <title>Contact Us | Bike King Borders</title>
 </head>
 
 <body>
-    <!-- NavBar -->
-    <div class="nav">
-        <div class="logoGroup">
-            <img class="logo" src="images/logosmall.png" style="float: left;" alt="Logo" onclick="document.location.href = '/home.html';">
-            <p id="toggle2" style="text-align: left;">BIKE KING BORDERS</p>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="/images/logowhite.png" alt="Bike King Borders" onclick="document.location.href = '/index.html';">
+                    </a>
+                </div>
+
+                <div class="menu-icons open" onclick="hideForm()">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close" onclick="showForm()">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="/store.html" class="nav-link">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/hire.html" class="nav-link">Hire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/service.html" class="nav-link">Servicing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/area.html" class="nav-link">Local Area</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact.html" class="nav-link current">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <label for="toggle">&#9776</label>
-        <input type="checkbox" id="toggle">
-        <div class="menu">
-            <a href="/store.html">Store</a>
-            <a href="/hire.html">Hire</a>
-            <a href="/repair.html">Repairs</a>
-            <a href="/gallery.html">Gallery</a>
-            <a href="/area.html">Local Area</a>
-            <a href="/contact.html" class="active">Contact</a>
+    </header>
+
+    <main>
+        <div class="contactWrapper">
+            <div class="form-container" id="form">
+                <span class="form-heading">Contact Us</span>
+                <form action="">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Name..." required>
+                        <span class="bar"></span>
+                    </div>
+    
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email..." required>
+                        <span class="bar"></span>
+                    </div>
+    
+                    <div class="input-group">
+                        <i class="fas fa-pen"></i>
+                        <input type="text-area" placeholder="Subject..." required>
+                        <span class="bar"></span>
+                    </div>
+    
+                    <div class="input-group">
+                        <i class="fas fa-pen"></i>
+                        <input type="text-area" placeholder="Message..." required>
+                        <span class="bar"></span>
+                    </div>
+    
+                    <div class="input-group">
+                        <button>
+                            <i class="fab fa-telegram-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="center bg-dark">
@@ -52,6 +116,26 @@
         </div>
         <p class="copyright">Bike King Borders &copy; 2020</p>
     </footer>
+    <script type="text/javascript" src="/scripts.js"></script>
+    <script>
+        function hideForm() {
+            var x = document.getElementById("form");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function showForm() {
+            var x = document.getElementById("form")
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
     
 </body>
 </html>

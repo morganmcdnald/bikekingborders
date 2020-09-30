@@ -6,61 +6,86 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/navstyles.css">
     <link rel="stylesheet" href="/lightbox.min.css">
     <script src="/lightbox-plus.jquery.min.js"></script>
-
+    <link rel="icon" href="/images/icon.png">
     <title>Gallery | Bike King Borders</title>
 </head>
 
 <body>
-    <!-- NavBar -->
-    <div class="nav">
-        <div class="logoGroup">
-            <img class="logo" src="images/logosmall.png" style="float: left;" alt="Logo" onclick="document.location.href = '/home.html';">
-            <p id="toggle2" style="text-align: left;">BIKE KING BORDERS</p>
-        </div>
-        <label for="toggle">&#9776</label>
-        <input type="checkbox" id="toggle">
-        <div class="menu">
-            <a href="/store.html">Store</a>
-            <a href="/hire.html">Hire</a>
-            <a href="/repair.html">Repairs</a>
-            <a href="/gallery.html" class="active">Gallery</a>
-            <a href="/area.html">Local Area</a>
-            <a href="/contact.html">Contact</a>
-        </div>
-    </div>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="/images/logowhite.png" alt="Bike King Borders" onclick="document.location.href = '/index.html';">
+                    </a>
+                </div>
 
-    <!-- Gallery -->
-    <div class="gallery-container">
-    <h1>GALLERY</h1>
-        <div class="image-gallery">
-            <a href="/images/aboutBike.jpg" data-lightbox="mygallery" data-title="Man on a Bike" class="img-1">
-                <i class="icon ion-md-expand"></i>
-            </a>
-            <a href="/images/aboutBike2.jpg" data-lightbox="mygallery" data-title="Cycling a Scenic Route" class="img-2">
-                <i class="icon ion-md-expand"></i>
-            </a>
-            <a href="/images/aboutBike3.jpg" data-lightbox="mygallery" data-title="Girl on a Bike" class="img-3">
-                <i class="icon ion-md-expand"></i>
-            </a>
-            <a href="/images/aboutBike4.jpg" data-lightbox="mygallery" data-title="People Peddling Bikes" class="img-4">
-                <i class="icon ion-md-expand"></i>
-            </a>
-            <a href="/images/aboutBike5.jpg" data-lightbox="mygallery" data-title="Man on a Bike" class="img-5">
-                <i class="icon ion-md-expand"></i>
-            </a>
-            <a href="/images/aboutBike6.jpg" data-lightbox="mygallery" data-title="Couple on the Beach" class="img-6">
-                <i class="icon ion-md-expand"></i>
-            </a>
-            <a href="/images/landingBike.jpg" data-lightbox="mygallery" data-title="Bike on Trail" class="img-7">
-                <i class="icon ion-md-expand"></i>
-            </a>
-            <a href="/images/aboutBike7.jpg" data-lightbox="mygallery" data-title="Cycling a Scenic Route" class="img-8">
-                <i class="icon ion-md-expand"></i>
-            </a>
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="/store.html" class="nav-link">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/hire.html" class="nav-link">Hire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/service.html" class="nav-link">Servicing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/gallery.html" class="nav-link current">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/area.html" class="nav-link">Local Area</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <!-- Gallery -->
+    <div class="gallery-container">
+        <h1>GALLERY</h1>
+            <div class="image-gallery">
+                <a href="/images/aboutBike.jpg" data-lightbox="mygallery" data-title="Man on a Bike" class="img-1">
+                    <i class="icon ion-md-expand"></i>
+                </a>
+                <a href="/images/aboutBike2.jpg" data-lightbox="mygallery" data-title="Cycling a Scenic Route" class="img-2">
+                    <i class="icon ion-md-expand"></i>
+                </a>
+                <a href="/images/aboutBike3.jpg" data-lightbox="mygallery" data-title="Girl on a Bike" class="img-3">
+                    <i class="icon ion-md-expand"></i>
+                </a>
+                <a href="/images/aboutBike4.jpg" data-lightbox="mygallery" data-title="People Peddling Bikes" class="img-4">
+                    <i class="icon ion-md-expand"></i>
+                </a>
+                <a href="/images/aboutBike5.jpg" data-lightbox="mygallery" data-title="Man on a Bike" class="img-5">
+                    <i class="icon ion-md-expand"></i>
+                </a>
+                <a href="/images/aboutBike6.jpg" data-lightbox="mygallery" data-title="Couple on the Beach" class="img-6">
+                    <i class="icon ion-md-expand"></i>
+                </a>
+                <a href="/images/landingBike.jpg" data-lightbox="mygallery" data-title="Bike on Trail" class="img-7">
+                    <i class="icon ion-md-expand"></i>
+                </a>
+                <a href="/images/aboutBike7.jpg" data-lightbox="mygallery" data-title="Cycling a Scenic Route" class="img-8">
+                    <i class="icon ion-md-expand"></i>
+                </a>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer class="center bg-dark">
@@ -85,6 +110,7 @@
         </div>
         <p class="copyright">Bike King Borders &copy; 2020</p>
     </footer>
+    <script type="text/javascript" src="/scripts.js"></script>
 
 </body>
 </html>

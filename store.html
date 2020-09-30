@@ -3,31 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ion Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <script src="dropdown.js"></script>
-
+    <link rel="stylesheet" href="/navstyles.css">
+    <link rel="icon" href="/images/icon.png">
     <title>Shop | Bike King Borders</title>
 </head>
 
 <body>
-    <!-- NavBar -->
-    <div class="nav">
-        <div class="logoGroup">
-            <img class="logo" src="images/logosmall.png" style="float: left;" alt="Logo" onclick="document.location.href = '/home.html';">
-            <p id="toggle2" style="text-align: left;">BIKE KING BORDERS</p>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="/images/logowhite.png" alt="Bike King Borders" onclick="document.location.href = '/index.html';">
+                    </a>
+                </div>
+
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="/store.html" class="nav-link current">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/hire.html" class="nav-link">Hire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/service.html" class="nav-link">Servicing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/area.html" class="nav-link">Local Area</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <label for="toggle">&#9776</label>
-        <input type="checkbox" id="toggle">
-        <div class="menu">
-            <a href="/store.html" class="active">Store</a>
-            <a href="/hire.html">Hire</a>
-            <a href="/repair.html">Repairs</a>
-            <a href="/gallery.html">Gallery</a>
-            <a href="/area.html">Local Area</a>
-            <a href="/contact.html">Contact</a>
-        </div>
-    </div>
+    </header>
+
+    <main>
+        
+        <section id="store" class="store">
+            <div class="saleContainer">
+                <br>
+                <h1 class="heading">Bikes for Sale</h1>
+                <h3 class="infoHeading">We have a range of different bikes available for sale. Below is a selection of what we have to offer!</h3>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <br>
+                        <img src="/images/Bikes/bike4.png" alt="card backgound" class="store-img">
+                        <h1>Cannondale Hardtail</h1>
+                        <p class="type">Mountain Bike</p>
+                        <p class="price">£449.00</p>
+                        <a href="https://www.bikeride.com/cannondale-trail/" class="btn" target="_blank">Reviews</a>
+                    </div>
+    
+                    <div class="card">
+                        <br>
+                        <img src="/images/Bikes/bike5.png" alt="card backgound" class="store-img">
+                        <h1>Kona Fire Mountain</h1>
+                        <p class="type">Mountain Bike</p>
+                        <p class="price">£668.00</p>
+                        <a href="https://www.icebike.org/p/kona-fire/" class="btn" target="_blank">Reviews</a>
+                    </div>
+
+                    <div class="card">
+                        <br>
+                        <img src="/images/Bikes/bike6.png" alt="card backgound" class="store-img">
+                        <h1>Surly Wednesday</h1>
+                        <p class="type">Mountain Bike</p>
+                        <p class="price">£1,500.00</p>
+                        <a href="https://www.bikeradar.com/reviews/bikes/mountain-bikes/surly-wednesday-review/" class="btn" target="_blank">Reviews</a>
+                    </div>
+
+                    <div class="card">
+                        <br>
+                        <img src="/images/Bikes/bike7.png" alt="card backgound" class="store-img">
+                        <h1>Giant Contend 2</h1>
+                        <p class="type">Road Bike</p>
+                        <p class="price">£679.00</p>
+                        <a href="https://www.bikeradar.com/reviews/bikes/road-bikes/giant-contend-2-review/" class="btn" target="_blank">Reviews</a>
+                    </div>
+
+                    <div class="card">
+                        <br>
+                        <img src="/images/Bikes/bike8.png" alt="card backgound" class="store-img">
+                        <h1>Forme Longcliffe 1</h1>
+                        <p class="type">Road Bike</p>
+                        <p class="price">£825.00</p>
+                        <a href="https://www.cyclingweekly.com/reviews/road-bikes/forme-longcliffe-1-0" class="btn" target="_blank">Reviews</a>
+                    </div>
+
+                    <div class="card">
+                        <br>
+                        <img src="/images/Bikes/bike9.png" alt="card backgound" class="store-img">
+                        <h1>Cinelli Veltrix Caliper</h1>
+                        <p class="type">Road Bike</p>
+                        <p class="price">£1,599.00</p>
+                        <a href="https://cyclinglife.site/bikes/cinelli-veltrix-disc-bike-review/" class="btn" target="_blank">Reviews</a>
+                    </div>
+
+                    <div class="card">
+                        <br>
+                        <img src="/images/Bikes/bike1.png" alt="card backgound" class="store-img">
+                        <h1>Redline Proline</h1>
+                        <p class="type">BMX Bike</p>
+                        <p class="price">£370.00</p>
+                        <a href="https://www.chainreactioncycles.com/redline-proline-pro-bmx-bike-2016/rp-prod157327" class="btn" target="_blank">Reviews</a>
+                    </div>
+    
+                    <div class="card">
+                        <br>
+                        <img src="/images/Bikes/bike2.png" alt="card backgound" class="store-img">
+                        <h1>Tribal Spear</h1>
+                        <p class="type">BMX Bike</p>
+                        <p class="price">£229.00</p>
+                        <a href="https://urbanwheelz.co.uk/tribal-spear-bmx-review/" class="btn" target="_blank">Reviews</a>
+                    </div>
+    
+                    <div class="card">
+                        <br>
+                        <img src="/images/Bikes/bike3.png" alt="card backgound" class="store-img">
+                        <h1>GT Pro Performer</h1>
+                        <p class="type">BMX Bike</p>
+                        <p class="price">£499.00</p>
+                        <a href="https://www.icebike.org/p/gt-performer/" class="btn" target="_blank">Reviews</a>
+                    </div>
+                </div>
+                <h2 class="infoHeading">Helmets, Clothing, Equipment and more available. Inquire in store or contact us for more details!</h2>
+            </div>
+        </section>
+        <a href="#" class="jumpTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    </main>
 
     <!-- Footer -->
     <footer class="center bg-dark">
@@ -52,6 +174,7 @@
         </div>
         <p class="copyright">Bike King Borders &copy; 2020</p>
     </footer>
+    <script type="text/javascript" src="/scripts.js"></script>
     
 </body>
 </html>

@@ -3,33 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ion Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/navstyles.css">
+    <link rel="icon" href="/images/icon.png">
     <title>Routes | Bike King Borders</title>
 </head>
 
 <body>
-    <!-- NavBar -->
-    <div class="nav">
-        <div class="logoGroup">
-            <img class="logo" src="images/logosmall.png" style="float: left;" alt="Logo" onclick="document.location.href = '/home.html';">
-            <p id="toggle2" style="text-align: left;">BIKE KING BORDERS</p>
-        </div>
-        <label for="toggle">&#9776</label>
-        <input type="checkbox" id="toggle">
-        <div class="menu">
-            <a href="/store.html">Store</a>
-            <a href="/hire.html">Hire</a>
-            <a href="/repair.html">Repairs</a>
-            <a href="/gallery.html">Gallery</a>
-            <a href="/area.html" class="active">Local Area</a>
-            <a href="/contact.html">Contact</a>
-        </div>
-    </div>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="/images/logowhite.png" alt="Bike King Borders" onclick="document.location.href = '/index.html';">
+                    </a>
+                </div>
 
-    <!-- Trails Cards -->
-    <section class="routes">
+                <div class="menu-icons open" onclick="hideNav()">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close" onclick="showNav()">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="/store.html" class="nav-link">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/hire.html" class="nav-link">Hire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/service.html" class="nav-link">Servicing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/area.html" class="nav-link current">Local Area</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Local Area Nav -->
+        <div class="routes-nav" id="routes-nav">
+            <div class="routes-menu">
+                <a href="#routes">Trails</a>
+                <a href="#events">Cycling Events</a>
+                <a href="#landmarks">Landmarks</a>
+                <a href="#map">Map</a>
+            </div>
+        </div>
+        <!-- Trails Cards -->
+    <section id="routes" class="routes">
         <div class="trailsContainer">
             <h1 class="heading">Local Trails</h1>
             <div class="card-wrapper">
@@ -51,6 +87,7 @@
 
                 <div class="card">
                     <img src="/images/bg3.jpg" alt="card backgound" class="card-img">
+                    <br>
                     <h1>Borders Railway Link</h1>
                     <p class="title">Distance</p>
                     <p class="info">7.7 miles</p>
@@ -64,7 +101,9 @@
                     <p class="info">Minimal</p>
                     <br>
                     <br>
+                    <br>
                     <a href="#" class="btn">Details</a>
+                    <br>
                     <br>
                 </div>
 
@@ -81,6 +120,63 @@
                     <p class="info">Coldstream, Galashiels, Innerleithen, Kelso, Melrose, Peebles, Walkerburn</p>
                     <p class="title">Altitude Gain</p>
                     <p class="info">1802</p>
+                    <br>
+                    <a href="#" class="btn">Details</a>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Cards -->
+    <section id="events" class="events bg-light">
+        <div class="eventsContainer">
+            <h1 class="heading">Upcoming Events</h1>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="/images/event4.jpg" alt="card backgound" class="card-img">
+                    <h1>Ride of the Valkyries</h1>
+                    <p class="title">Distance</p>
+                    <p class="info">106km</p>
+                    <p class="title">Description</p>
+                    <p class="info">Controls at Gordon Arms Hotel and Lilliesleaf Jammy Coo Cafe, plus 3 information controls. Part two of our Falling Leaves weekend of events takes in some of the best Borders roads and views.</p>
+                    <br>
+                    <a href="#" class="btn">Details</a>
+                    <br>
+                </div>
+
+                <div class="card">
+                    <img src="/images/event2.jpg" alt="card backgound" class="card-img">
+                    <h1>The Long Dark Teatime of the Soul</h1>
+                    <p class="title">Distance</p>
+                    <p class="info">200km</p>
+                    <p class="title">Description</p>
+                    <p class="info">Lovely route through the Western Scottish Borders and Dumfries and Galloway via the beautiful Castle O’er road to Longtown and back.</p>
+                    <br>
+                    <a href="#" class="btn">Details</a>
+                    <br>
+                </div>
+
+                <div class="card">
+                    <img src="/images/event1.jpg" alt="card backgound" class="card-img">
+                    <h1>Alston and Back</h1>
+                    <p class="title">Distance</p>
+                    <p class="info">300km</p>
+                    <p class="title">Description</p>
+                    <p class="info">As it’s name suggests,an out and back route to Alston via the valley roads through Eskdalemuir and Langholm with good views and not excessive amounts of climb for the area. </p>
+                    <br>
+                    <a href="#" class="btn">Details</a>
+                    <br>
+                </div>
+
+                <div class="card">
+                    <img src="/images/event3.jpg" alt="card backgound" class="card-img">
+                    <h1>Home In Time for Tea</h1>
+                    <p class="title">Distance</p>
+                    <p class="info">116km</p>
+                    <p class="title">Description</p>
+                    <p class="info">Controls at Eskdalemuir. Beautiful Ettrick valley route to Eskdalemuir with good café stop halfway and return with the gradient and usually the wind with you too.</p>
+                    <br>
                     <a href="#" class="btn">Details</a>
                 </div>
             </div>
@@ -88,7 +184,7 @@
     </section>
 
     <!-- Landmarks Cards -->
-    <section class="landmarks">
+    <section id="landmarks" class="landmarks">
         <div class="landmarksContainer">
             <h1 class="heading">Landmarks</h1>
             <h2 class="subheading">Things to See In The Area</h2>
@@ -136,63 +232,15 @@
         </div>
     </section>
 
-    <!-- Events Cards -->
-    <section class="events">
-        <div class="eventsContainer">
-            <h1 class="heading">Upcoming Events</h1>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="/images/event4.jpg" alt="card backgound" class="card-img">
-                    <h1>Ride of the Valkyries</h1>
-                    <p class="title">Distance</p>
-                    <p class="info">106km</p>
-                    <p class="title">Description</p>
-                    <p class="info">Controls at Gordon Arms Hotel and Lilliesleaf Jammy Coo Cafe, plus 3 information controls. Part two of our Falling Leaves weekend of events takes in some of the best Borders roads and views.</p>
-                    <br>
-                    <a href="#" class="btn">Details</a>
-                </div>
-
-                <div class="card">
-                    <img src="/images/event2.jpg" alt="card backgound" class="card-img">
-                    <h1>The Long Dark Teatime of the Soul</h1>
-                    <p class="title">Distance</p>
-                    <p class="info">200km</p>
-                    <p class="title">Description</p>
-                    <p class="info">ovely route through the Western Scottish Borders and Dumfries and Galloway via the beautiful Castle O’er road to Longtown and back.</p>
-                    <a href="#" class="btn">Details</a>
-                </div>
-
-                <div class="card">
-                    <img src="/images/event1.jpg" alt="card backgound" class="card-img">
-                    <h1>Alston and Back</h1>
-                    <p class="title">Distance</p>
-                    <p class="info">300km</p>
-                    <p class="title">Description</p>
-                    <p class="info">As it’s name suggests,an out and back route to Alston via the valley roads through Eskdalemuir and Langholm with good views and not excessive amounts of climb for the area. </p>
-                    <br>
-                    <a href="#" class="btn">Details</a>
-                </div>
-
-                <div class="card">
-                    <img src="/images/event3.jpg" alt="card backgound" class="card-img">
-                    <h1>Home In Time for Tea</h1>
-                    <br>
-                    <p class="title">Distance</p>
-                    <p class="info">116km</p>
-                    <p class="title">Description</p>
-                    <p class="info">Controls at Eskdalemuir. Beautiful Ettrick valley route to Eskdalemuir with good café stop halfway and return with the gradient and usually the wind with you too.</p>
-                    <br>
-                    <a href="#" class="btn">Details</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Map -->
-    <div class="map center">
+    <div id="map" class="map center bg-light">
         <h1>MAP OF LOCAL AREA</h1>
         <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1301.3741305949002!2d-2.8179655339448524!3d55.623352176705104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887680c4766bb4d%3A0xdcf6a099448fe465!2sGalashiels!5e0!3m2!1sen!2suk!4v1600862528881!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
+    <a href="#" class="jumpTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    </main>
 
     <!-- Footer -->
     <footer class="center bg-dark">
@@ -217,6 +265,30 @@
         </div>
         <p class="copyright">Bike King Borders &copy; 2020</p>
     </footer>
+    <script type="text/javascript" src="/scripts.js"></script>
+    <script>
+        function hideNav() {
+            var x = document.getElementById("routes-nav");
+            var y = document.getElementById("routes")
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+                y.style.paddingTop = "18.5rem";
+            }
+        }
+
+        function showNav() {
+            var x = document.getElementById("routes-nav");
+            var y = document.getElementById("routes")
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+                y.style.paddingTop = "4rem";
+            }
+        }
+    </script>
     
 </body>
 </html>
