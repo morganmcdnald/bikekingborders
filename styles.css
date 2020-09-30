@@ -408,6 +408,11 @@ footer p {
   padding-bottom: 2rem;
 }
 
+.service-bg {
+    background: linear-gradient(135deg, rgba(24,77,71,0.9) 0%, rgba(30,95,88, 0.8) 100%), url(/images/service-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
 /* Routes Page */
 
 .routes {
@@ -762,7 +767,7 @@ footer p {
     padding-left: 5rem;
 }
 
-.table{
+.table, .mini-table {
 	width: 70%;
     border-collapse: collapse;
     margin-left: auto;
@@ -771,8 +776,18 @@ footer p {
     margin-bottom: 3%;
 }
 
+.mini-table {
+    margin-top: 2%;
+}
+
 .table td,.table th{
   padding:17px 15px;
+  text-align: center;
+  font-size:16px;
+}
+
+.mini-table td {
+  padding:17px 10px;
   text-align: center;
   font-size:16px;
 }
@@ -784,12 +799,12 @@ footer p {
     color: #181818;
 }
 
-.table tbody tr {
+.table tbody tr, .mini-table tbody tr {
     background-color: #d6efc7;
     color: #181818;
 }
 
-.table tbody tr:hover{
+.table tbody tr:hover, .mini-table tbody tr:hover{
 	background-color: #c3e2b1;
 }
 
