@@ -811,7 +811,11 @@ footer p {
 @media(max-width: 824px){
 	.table thead{
 		display: none;
-	}
+    }
+    
+    .mini-table {
+        width: 100%;
+    }
 
 	.table, .table tbody, .table tr, .table td{
 		display: block;
