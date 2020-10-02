@@ -622,122 +622,7 @@ footer p {
 }
 
 /* Contact Form */
-.contactWrapper {
-    width: 90%;
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.form-container {
-    width: 100%;
-    height: 60%;
-    max-width: 55rem;
-    background-color: #d6efc7;
-    position: relative;
-    padding: 10rem 0;
-    box-shadow: 0 1px 1.5rem rgba(0, 0, 0, .1);
-    border-radius: 1rem;
-    z-index: 1;
-}
-
-.form-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 25rem;
-    background: linear-gradient(to left, #f19720, #eebb4d);
-    border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 100%;
-    z-index: -1;
-}
-
-.form-heading {
-    color: #181818;
-    font-size: 3.7rem;
-    position: absolute;
-    top: 3.5rem;
-    left: 10rem;
-    text-align: center;
-}
-
-.form-container form {
-    transform: translateX(10rem);
-    padding: 25% 0;
-    background-color: #d6efc7;
-    border-radius: 1rem;
-    box-shadow: 0 1px 1.5rem rgba(0, 0, 0, .1);
-    width: 100%;
-    height: 100%;
-}
-
-
-.input-group {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.input-group input {
-    position: relative;
-    width: 100%;
-    padding: 1rem 0;
-    margin-top: .5rem;
-    border: none;
-    outline: none;
-    font-size: 1.8rem;
-    background-color: #d6efc7;
-    color: #f19720;
-}
-
-.input-group > i {
-    font-size: 2rem;
-    margin-right: 1.2rem;
-    color: #181818;
-}
-
-.input-group .bar {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .1);
-    width: 100%;
-    height: 1px;
-}
-
-.input-group .bar::before {
-    content: '';
-    position: absolute;
-    background-color: #eebb4d;
-    width: 0;
-    height: 2px;
-    transition: width 650ms;
-}
-
-.input-group input:focus + .bar::before {
-    width: 100%;
-}
-
-.input-group button {
-    margin: 3rem auto;
-    padding: 1rem 5rem;
-    background: linear-gradient(to left, #f19720, #eebb4d);
-    border: none;
-    color: #d6efc7;
-    font-size: 2.5rem;
-    cursor: pointer;
-    border-radius: 3rem;
-}
-
-.input-group button:focus, .input-group button:hover {
-    background: linear-gradient(to right, #f19720, #eebb4d);
-}
 
 .service-heading {
     margin-top: 10rem;
@@ -864,13 +749,6 @@ footer p {
     }
 }
 
-@media only screen and (max-width: 555px) {
-    .form-heading {
-        font-size: 2.5rem;
-    }
-
-}
-
 @media only screen and (max-width: 496px) {
     .routes-menu a {
         font-size: 8px;
@@ -886,35 +764,6 @@ footer p {
         padding: 0;
     }
 
-    .form-heading {
-        top: 2rem;
-    }
-
-    .form-container form {
-        padding: 1rem 0;
-        width: 100%;
-    }
-    
-    .input-group input {
-        font-size: 1rem;
-    }
-
-    .input-group button {
-        margin: 1rem auto;
-        padding: 1rem 2rem;
-        font-size: 1rem;
-    }
-
-    .form-container {
-        margin-top: 50px;
-    }
-
-    .contact-form input {
-        width: 50%;
-        padding: 0;
-        margin-top: 0;
-    }
-
     .newsletter, .about, .socials, .youtubeLink, .grid-3 {
         margin-right: 0;
         padding-right: 0;
@@ -928,40 +777,6 @@ footer p {
 @media only screen and (max-width: 355px) {
     .events .card, .routes .card, .landmarks .card {
         width: 31rem;
-    }
-}
-
-@media only screen and (max-width: 365px) {
-    .form-container {
-        height: 60%;
-    }
-    
-}
-
-@media only screen and (max-height: 720px) {
-    .form-container form {
-        padding: 20% 0;
-    }
-
-    .form-container {
-        height: 80%;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .form-container::before {
-        height: 10rem;
-    }
-
-    .form-heading {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .form-container form {
-        border-radius: initial;
-        transform: initial;
-        box-shadow: none;
     }
 }
 
@@ -1110,21 +925,6 @@ footer p {
 
     .routes-menu a {
         font-size: 15px;
-    }
-
-}
-
-@media screen and (max-height: 1025px) and (min-width: 1201px) {
-    .form-container form {
-        padding: 20% 0;
-    }
-
-    .form-container {
-        height: 90%;
-    }
-
-    .contactWrapper {
-        padding-top: 6rem;
     }
 
 }
