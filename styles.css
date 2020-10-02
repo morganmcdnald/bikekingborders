@@ -764,6 +764,7 @@ textarea{
 
 @media screen and (max-width: 880px){
     .contact-page {
+        min-height: 100vh;
         height: 100%;
     }
 
