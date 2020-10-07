@@ -1,8 +1,4 @@
-Redo About Section on landing page from scratch
-Add hover effect to social media links on Landing page
 Fix the scaling on the Contact Us page
 Reduce image sizes on store to reduce loading times
 Change names of service packages to brike trail difficulties
 Change size of buttons on store on mobile
-Write text to get rid of lorem ipsum
-Change youtube video link
