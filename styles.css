@@ -491,7 +491,7 @@ footer p {
 }
 
 .store {
-    background: linear-gradient(135deg, rgb(58 114 134 / 63%) 0%, rgb(30 95 88 / 87%) 100%), url(/images/storebg4.png) no-repeat;
+    background: linear-gradient(180, rgb(58 114 134 / 63%) 0%, rgb(30 95 88 / 87%) 100%), url(/images/storebg4.png) no-repeat;
     background-size: cover;
 }
 
