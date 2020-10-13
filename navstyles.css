@@ -32,9 +32,9 @@ section {
     padding: 5rem 0;
 }
 
-body {
+/* body {
     background-color: #184d47;
-}
+} */
 
 
 /* Header Styles */
@@ -74,13 +74,13 @@ nav {
 }
 
 .close i {
-    color: #eebb4d;
+    color: #181818;
 }
 
 .nav-list {
     width: 25rem;
     height: 100vh;
-    background-color: #d6efc7;
+    background-color: #eefaff;
     position: fixed;
     top: 0;
     right: -26rem;
@@ -120,7 +120,7 @@ nav {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    color: #d6efc7;
+    color: #fafafa;
     font-size: 1.7rem;
 }
 

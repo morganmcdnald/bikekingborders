@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
 
 html, body {
-    background: linear-gradient(135deg, rgba(24,77,71,0.9) 0%, rgba(30,95,88, 0.8) 100%);
-    background-color: #184d47;
+    background: linear-gradient(180deg, rgba(58,114,134,0.9) 0%, rgba(30,95,88, 0.8) 100%);
+    /* background-color: #184d47; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     margin: 0;
     scroll-behavior: smooth;
 }
@@ -27,8 +27,8 @@ html {
 }
 
 .routes-menu {
-    padding: 0 30px 0 0;
-    background-color: #184d47;
+    /* padding: 0 30px 0 0; */
+    background-color: #4d8091;
     z-index: 0;
     display: block;
 }
@@ -125,7 +125,7 @@ html {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    color: #d6efc7;
+    color: #fafafa;
 }
 
 .grid-3 i {
@@ -179,13 +179,13 @@ html {
 }
 
 .bg-light {
-    background: #d6efc7;
+    background: rgba(238,250,255,0.7);
     color: #333;
 }
 
 .bg-dark {
-    background: #181818;
-    color: #d6efc7;
+    background: #252525;
+    color: #ffffff;
 }
 
 .socials h3 {
@@ -221,7 +221,7 @@ footer p {
       text-align: center;
       padding: 15px;
       border-radius: 5px;
-      border: 2px solid #184d47;
+      /* border: 2px solid #184d47; */
       color: #181818;
       cursor: pointer;
       text-transform: uppercase;
@@ -247,7 +247,7 @@ footer p {
   /* Gallery */
   
   .gallery-container {
-      padding-top: 12rem;
+      padding-top: 10rem;
       padding-bottom: 10rem;
       width: 100%;
       max-width: 250rem;
@@ -267,7 +267,6 @@ footer p {
   }
 
   .store h2 {
-    color: #eebb4d;
     font-size: 2.5rem;
     font-weight: 400;
     text-align: center;
@@ -280,7 +279,6 @@ footer p {
 }
 
 .store h3 {
-    color: #eebb4d;
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
@@ -408,10 +406,11 @@ footer p {
   padding-bottom: 2rem;
 }
 
-.service-bg {
-    background: linear-gradient(135deg, rgba(24,77,71,0.9) 0%, rgba(30,95,88, 0.8) 100%), url(/images/service-bg.jpg) no-repeat;
+.service-bg, .area-bg {
+    background: linear-gradient(180deg, rgb(60 116 138 / 90%) 0%, rgb(30 95 88 / 87%) 100%), url(/images/service-bg.jpg) no-repeat;
     background-size: cover;
 }
+
 
 /* Routes Page */
 
@@ -420,7 +419,7 @@ footer p {
     overflow-x: hidden;
 }
 
-.routes .heading, .landmarks .heading, .events .heading, .store .heading {
+.routes .heading, .landmarks .heading, .events .heading, .store .heading, .gallery-container .heading {
     text-transform: uppercase;
     font-size: 3.2rem;
     font-weight: 400;
@@ -428,7 +427,7 @@ footer p {
     margin-right: -3px;
     margin-bottom: 1rem;
     text-align: center;
-    color: #eebb4d;
+    color: #fafafa;
     position: relative;
 }
 
@@ -439,7 +438,7 @@ footer p {
     margin-right: -3px;
     margin-bottom: 1rem;
     text-align: center;
-    color: #eebb4d;
+    color: #fafafa;
     padding-left: 20%;
 }
 
@@ -465,7 +464,7 @@ footer p {
     margin-right: -3px;
     margin-bottom: 3rem;
     text-align: center;
-    color: #eebb4d;
+    color: #fafafa;
     position: relative;
 }
 
@@ -474,12 +473,14 @@ footer p {
     align-items: center;
     align-content: center;
     flex-direction: column;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .card {
     width: 38rem;
     height: auto;
-    background-color: #d6efc7;
+    background-color: #eefaff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -490,7 +491,7 @@ footer p {
 }
 
 .store {
-    background: linear-gradient(135deg, rgba(24,77,71,0.9) 0%, rgba(30,95,88, 0.8) 100%), url(/images/storebg4.png) no-repeat;
+    background: linear-gradient(135deg, rgb(58 114 134 / 63%) 0%, rgb(30 95 88 / 87%) 100%), url(/images/storebg4.png) no-repeat;
     background-size: cover;
 }
 
@@ -505,7 +506,7 @@ footer p {
 
 .events .card {
     width: 30rem;
-    background-color: #184d47;
+    background-color: #377081;
 }
 
 .events .card h1, .store .card h1 {
@@ -575,23 +576,23 @@ footer p {
 }
 
 .events .card .title, .events .card .info, .events .card h1 {
-    color: #d6efc7;
+    color: #fafafa;
 }
 
 .routes .card .btn, .landmarks .card .btn, .events .card .btn, .store .card .btn {
     padding: .5rem .5rem;
-    background-color: #184d47;
+    background-color: #506a6f;
     border-radius: 2rem;
     margin: 1rem;
     text-transform: uppercase;
-    color: #eebb4d;
+    color: #ffffff;
     font-size: 1.4rem;
     text-decoration: none;
     transition: all .5s;
 }
 
 .events .card .btn {
-    background-color: #d6efc7;
+    background-color: #fafafa;
     color: #181818;
     font-size: 1.4rem;
 }
@@ -601,7 +602,7 @@ footer p {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #eebb4d;
+    background-color: #ebbf61;
     bottom: 50px;
     right: 50px;
     text-decoration: none;
@@ -639,13 +640,13 @@ footer p {
 
 .contact-page {
     padding-top: 10rem;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .contact-container{
 	position: relative;
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -672,7 +673,7 @@ footer p {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: #d6efc7;
+	background-color: #eefaff;
 	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 }
 
@@ -703,7 +704,7 @@ footer p {
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color: #eebb4d;
+    background-color: #2d819b;
 }
 
 .contact-page p {
@@ -744,8 +745,8 @@ textarea{
     font-family: "Montserrat", sans-serif;
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: #eebb4d;
-	color: #181818;
+	background-color: #377081;
+	color: #fafafa;
 	font-size: 1.8rem;
 	border: none;
 	outline: none;
@@ -754,7 +755,7 @@ textarea{
 }
 
 .right .btn:hover{
-    background-color: #e6af3b;
+    background-color: #4c8da1;
 }
 
 .field:focus{
@@ -830,7 +831,7 @@ textarea{
     margin-right: -3px;
     margin-bottom: 1rem;
     text-align: center;
-    color: #eebb4d;
+    color: #fafafa;
     position: relative;
 }
 
@@ -843,7 +844,7 @@ textarea{
     margin-right: -1px;
     margin-bottom: 3rem;
     text-align: center;
-    color: #eebb4d;
+    color: #fafafa;
     position: relative;
     padding-right: 5rem;
     padding-left: 5rem;
@@ -877,17 +878,17 @@ textarea{
 .table th{
     border: none;
     /* border-radius: 8px; */
-	background-color: #eebb4d;
-    color: #181818;
+	background-color: #377081;
+    color: #fafafa;
 }
 
 .table tbody tr, .mini-table tbody tr {
-    background-color: #d6efc7;
+    background-color: #eefaff;
     color: #181818;
 }
 
 .table tbody tr:hover, .mini-table tbody tr:hover{
-	background-color: #c3e2b1;
+	background-color: #dcf4fd;
 }
 
 @media(max-width: 824px){
