@@ -129,7 +129,7 @@ html {
 }
 
 .grid-3 i {
-    color: #eebb4d;
+    color: #eefaff;
 }
 
 .grid-2 {
@@ -878,7 +878,7 @@ textarea{
 .table th{
     border: none;
     /* border-radius: 8px; */
-	background-color: #377081;
+	background-color: #1c5364;
     color: #fafafa;
 }
 
