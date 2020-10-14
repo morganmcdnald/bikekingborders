@@ -1,121 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Ion Icons -->
-    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+    />
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/navstyles.css">
-    <link rel="icon" href="/images/icon.png">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/navstyles.css" />
+    <link rel="icon" href="/images/icon.png" />
     <title>Contact Us | Bike King Borders</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container">
-            <nav>
-                <div class="nav-brand">
-                    <a href="index.html">
-                        <img src="/images/logowhite.png" alt="Bike King Borders" onclick="document.location.href = '/index.html';">
-                    </a>
-                </div>
+      <div class="container">
+        <nav>
+          <div class="nav-brand">
+            <a href="index.html">
+              <img
+                src="/images/logowhite.png"
+                alt="Bike King Borders"
+                onclick="document.location.href = '/index.html';"
+              />
+            </a>
+          </div>
 
-                <div class="menu-icons open" onclick="hideForm()">
-                    <i class="icon ion-md-menu"></i>
-                </div>
+          <div class="menu-icons open" onclick="hideForm()">
+            <i class="icon ion-md-menu"></i>
+          </div>
 
-                <ul class="nav-list">
-                    <div class="menu-icons close" onclick="showForm()">
-                        <i class="icon ion-md-close"></i>
-                    </div>
-                    <li class="nav-item">
-                        <a href="/store.html" class="nav-link">Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/hire.html" class="nav-link">Hire</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/service.html" class="nav-link">Servicing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/gallery.html" class="nav-link">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/area.html" class="nav-link">Local Area</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/contact.html" class="nav-link current">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+          <ul class="nav-list">
+            <div class="menu-icons close" onclick="showForm()">
+              <i class="icon ion-md-close"></i>
+            </div>
+            <li class="nav-item">
+              <a href="/store.html" class="nav-link">Store</a>
+            </li>
+            <li class="nav-item">
+              <a href="/hire.html" class="nav-link">Hire</a>
+            </li>
+            <li class="nav-item">
+              <a href="/service.html" class="nav-link">Servicing</a>
+            </li>
+            <li class="nav-item">
+              <a href="/gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="/area.html" class="nav-link">Local Area</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact.html" class="nav-link current">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section class="contact-page">
-            <div class="contact-container">
-                <div class="contact-box">
-                    <div class="left"></div>
-                    <div class="right">
-                        <h2>Contact Us</h2>
-                        <p>Would you like some more information on any of our services? Do you have any other queries? Send us a message and we will get back to you as soon as possible!</p>
-                        <input type="text" class="field" placeholder="Your Name">
-                        <input type="text" class="field" placeholder="Your Email">
-                        <input type="text" class="field" placeholder="Phone">
-                        <textarea class="field" placeholder="Your Message"></textarea>
-                        <button class="btn">Send</button>
-                    </div>
-                </div>
+      <section class="contact-page">
+        <div class="contact-container">
+          <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+              <h2>Contact Us</h2>
+              <p>
+                Would you like some more information on any of our services? Do
+                you have any other queries? Send us a message and we will get
+                back to you as soon as possible!
+              </p>
+              <input type="text" class="field" placeholder="Your Name" /
+              required> <input type="text" class="field" placeholder="Your Email" / required>
+              <input type="text" class="field" placeholder="Phone" />
+              <!-- <p>What is your inquiry regarding?</p>
+              <input type="radio" name="inquiry"/>
+              <label for="store">Store</label>
+              <input type="radio" name="inquiry" />
+              <label for="hire">Hire</label>
+              <input type="radio" name="inquiry" />
+              <label for="service">Servicing</label>
+              <input type="radio" name="inquiry" />
+              <label for="other">Other</label> -->
+
+              <div>
+                <label class="radio">
+                    <input type="radio" name="r" value="1" checked>
+                    <span>Store</span>
+                </label>
+                <label class="radio">
+                    <input type="radio" name="r" value="2">
+                    <span>Hire</span>
+                </label>
+                <label class="radio">
+                    <input type="radio" name="r" value="3">
+                    <span>Servicing</span>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="r" value="4">
+                  <span>Other</span>
+              </label>
             </div>
-        </section>
+              
+              <textarea class="field" placeholder="Your Message"></textarea>
+              <button class="btn">Send</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="center bg-dark">
-        <div class="container grid-3 center">
-            <div>
-                <i class="fas fa-store fa-2x"></i>
-                <h3>Address</h3>
-                <p>123 Wheel Drive<br>Galashiels<br>TD1 7DE</p>
-            </div>
-
-            <div>
-                <div><i class="fas fa-phone fa-2x"></i></div>
-                <h3>Contact</h3>
-                <p>(01234) 567 567<br><br>admin@bikekingborders.com</p>
-            </div>
-
-            <div>
-                <div><i class="far fa-clock fa-2x"></i></div>
-                <h3>Opening Hours</h3>
-                <p>Mon-Fri: 0900-1700<br>Sat: 0900-1900<br>Sun: 1000-1600</p>
-            </div>
+      <div class="container grid-3 center">
+        <div>
+          <i class="fas fa-store fa-2x"></i>
+          <h3>Address</h3>
+          <p>123 Wheel Drive<br />Galashiels<br />TD1 7DE</p>
         </div>
-        <p class="copyright">Bike King Borders &copy; 2020</p>
+
+        <div>
+          <div><i class="fas fa-phone fa-2x"></i></div>
+          <h3>Contact</h3>
+          <p>(01234) 567 567<br /><br />admin@bikekingborders.com</p>
+        </div>
+
+        <div>
+          <div><i class="far fa-clock fa-2x"></i></div>
+          <h3>Opening Hours</h3>
+          <p>Mon-Fri: 0900-1700<br />Sat: 0900-1900<br />Sun: 1000-1600</p>
+        </div>
+      </div>
+      <p class="copyright">Bike King Borders &copy; 2020</p>
     </footer>
     <script type="text/javascript" src="/scripts.js"></script>
     <script>
-        function hideForm() {
-            var x = document.getElementById("form");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
+      function hideForm() {
+        var x = document.getElementById("form");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
         }
+      }
 
-        function showForm() {
-            var x = document.getElementById("form")
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+      function showForm() {
+        var x = document.getElementById("form");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
         }
+      }
     </script>
-    
-</body>
+  </body>
 </html>

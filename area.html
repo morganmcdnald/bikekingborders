@@ -1,294 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Ion Icons -->
-    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+    />
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/navstyles.css">
-    <link rel="icon" href="/images/icon.png">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/navstyles.css" />
+    <link rel="icon" href="/images/icon.png" />
     <title>Routes | Bike King Borders</title>
-</head>
+  </head>
 
-<body class="area-bg">
+  <body class="area-bg">
     <header>
-        <div class="container">
-            <nav>
-                <div class="nav-brand">
-                    <a href="index.html">
-                        <img src="/images/logowhite.png" alt="Bike King Borders" onclick="document.location.href = '/index.html';">
-                    </a>
-                </div>
+      <div class="container">
+        <nav>
+          <div class="nav-brand">
+            <a href="index.html">
+              <img
+                src="/images/logowhite.png"
+                alt="Bike King Borders"
+                onclick="document.location.href = '/index.html';"
+              />
+            </a>
+          </div>
 
-                <div class="menu-icons open" onclick="hideNav()">
-                    <i class="icon ion-md-menu"></i>
-                </div>
+          <div class="menu-icons open" onclick="hideNav()">
+            <i class="icon ion-md-menu"></i>
+          </div>
 
-                <ul class="nav-list">
-                    <div class="menu-icons close" onclick="showNav()">
-                        <i class="icon ion-md-close"></i>
-                    </div>
-                    <li class="nav-item">
-                        <a href="/store.html" class="nav-link">Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/hire.html" class="nav-link">Hire</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/service.html" class="nav-link">Servicing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/gallery.html" class="nav-link">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/area.html" class="nav-link current">Local Area</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/contact.html" class="nav-link">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+          <ul class="nav-list">
+            <div class="menu-icons close" onclick="showNav()">
+              <i class="icon ion-md-close"></i>
+            </div>
+            <li class="nav-item">
+              <a href="/store.html" class="nav-link">Store</a>
+            </li>
+            <li class="nav-item">
+              <a href="/hire.html" class="nav-link">Hire</a>
+            </li>
+            <li class="nav-item">
+              <a href="/service.html" class="nav-link">Servicing</a>
+            </li>
+            <li class="nav-item">
+              <a href="/gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="/area.html" class="nav-link current">Local Area</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <!-- Local Area Nav -->
-        <div class="routes-nav" id="routes-nav">
-            <div class="routes-menu">
-                <a href="#routes">Trails</a>
-                <a href="#events">Cycling Events</a>
-                <a href="#landmarks">Landmarks</a>
-                <a href="#map">Map</a>
-            </div>
+      <!-- Local Area Nav -->
+      <div class="routes-nav" id="routes-nav">
+        <div class="routes-menu">
+          <a href="#routes">Trails</a>
+          <a href="#events">Cycling Events</a>
+          <a href="#landmarks">Landmarks</a>
+          <a href="#map">Map</a>
         </div>
-        <!-- Trails Cards -->
-    <section id="routes" class="routes">
+      </div>
+      <!-- Trails Cards -->
+      <section id="routes" class="routes">
         <div class="trailsContainer">
-            <h1 class="heading">Local Trails</h1>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="/images/bg1.jpg" alt="card backgound" class="card-img">
-                    <h1>Coast & Castles</h1>
-                    <p class="title">Distance</p>
-                    <p class="info">200 miles</p>
-                    <p class="title">Level</p>
-                    <p class="info">Challenge</p>
-                    <p class="title">Level Details</p>
-                    <p class="info">Repeated long hilly stages including remote areas. High degree of self sufficiency required and some require multi-day/night trips.</p>
-                    <p class="title">Towns</p>
-                    <p class="info">Coldstream, Galashiels, Kelso, Melrose, Newcastleton, St Boswells, Traquair, Blyth Bridge</p>
-                    <p class="title">Altitude Gain</p>
-                    <p class="info">1423.9</p>
-                    <a href="#" class="btn">Details</a>
-                </div>
-
-                <div class="card">
-                    <img src="/images/bg3.jpg" alt="card backgound" class="card-img">
-                    <br>
-                    <h1>Borders Railway Link</h1>
-                    <p class="title">Distance</p>
-                    <p class="info">7.7 miles</p>
-                    <p class="title">Level</p>
-                    <p class="info">Easy</p>
-                    <p class="title">Level Details</p>
-                    <p class="info">A short linking route.</p>
-                    <p class="title">Towns</p>
-                    <p class="info">Clovenfords, Melrose, Galashiels, Tweedbank.</p>
-                    <p class="title">Altitude Gain</p>
-                    <p class="info">Minimal</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="#" class="btn">Details</a>
-                </div>
-
-                <div class="card">
-                    <img src="/images/bg2.jpg" alt="card backgound" class="card-img">
-                    <h1>Tweed Cycle Route</h1>
-                    <p class="title">Distance</p>
-                    <p class="info">95 miles</p>
-                    <p class="title">Level</p>
-                    <p class="info">Challenge</p>
-                    <p class="title">Level Details</p>
-                    <p class="info">Repeated long hilly stages including remote areas. High degree of self sufficiency required and some require multi-day/night trips.</p>
-                    <p class="title">Towns</p>
-                    <p class="info">Coldstream, Galashiels, Innerleithen, Kelso, Melrose, Peebles, Walkerburn</p>
-                    <p class="title">Altitude Gain</p>
-                    <p class="info">1802</p>
-                    <br>
-                    <br>
-                    <a href="#" class="btn">Details</a>
-                </div>
+          <h1 class="heading">Local Trails</h1>
+          <div class="card-wrapper">
+            <div class="card">
+              <img
+                src="/images/bg1.jpg"
+                alt="card backgound"
+                class="card-img"
+              />
+              <h1>Coast & Castles</h1>
+              <p class="title">Distance</p>
+              <p class="info">200 miles</p>
+              <p class="title">Level</p>
+              <p class="info">Challenge</p>
+              <p class="title">Level Details</p>
+              <p class="info">
+                Repeated long hilly stages including remote areas. High degree
+                of self sufficiency required and some require multi-day/night
+                trips.
+              </p>
+              <p class="title">Towns</p>
+              <p class="info">
+                Coldstream, Galashiels, Kelso, Melrose, Newcastleton, St
+                Boswells, Traquair, Blyth Bridge
+              </p>
+              <p class="title">Altitude Gain</p>
+              <p class="info">1423.9</p>
+              <a href="#" class="btn">Details</a>
             </div>
-        </div>
-    </section>
 
-    <!-- Events Cards -->
-    <section id="events" class="events bg-light">
+            <div class="card">
+              <img
+                src="/images/bg3.jpg"
+                alt="card backgound"
+                class="card-img"
+              />
+              <br />
+              <h1>Borders Railway Link</h1>
+              <p class="title">Distance</p>
+              <p class="info">7.7 miles</p>
+              <p class="title">Level</p>
+              <p class="info">Easy</p>
+              <p class="title">Level Details</p>
+              <p class="info">A short linking route.</p>
+              <p class="title">Towns</p>
+              <p class="info">Clovenfords, Melrose, Galashiels, Tweedbank.</p>
+              <p class="title">Altitude Gain</p>
+              <p class="info">Minimal</p>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <a href="#" class="btn">Details</a>
+            </div>
+
+            <div class="card">
+              <img
+                src="/images/bg2.jpg"
+                alt="card backgound"
+                class="card-img"
+              />
+              <h1>Tweed Cycle Route</h1>
+              <p class="title">Distance</p>
+              <p class="info">95 miles</p>
+              <p class="title">Level</p>
+              <p class="info">Challenge</p>
+              <p class="title">Level Details</p>
+              <p class="info">
+                Repeated long hilly stages including remote areas. High degree
+                of self sufficiency required and some require multi-day/night
+                trips.
+              </p>
+              <p class="title">Towns</p>
+              <p class="info">
+                Coldstream, Galashiels, Innerleithen, Kelso, Melrose, Peebles,
+                Walkerburn
+              </p>
+              <p class="title">Altitude Gain</p>
+              <p class="info">1802</p>
+              <br />
+              <br />
+              <a href="#" class="btn">Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Events Cards -->
+      <section id="events" class="events bg-light">
         <div class="eventsContainer">
-            <h1 class="heading">Upcoming Events</h1>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="/images/event4.jpg" alt="card backgound" class="card-img">
-                    <h1>Ride of the Valkyries</h1>
-                    <p class="title">Distance</p>
-                    <p class="info">106km</p>
-                    <p class="title">Description</p>
-                    <p class="info">Controls at Gordon Arms Hotel and Lilliesleaf Jammy Coo Cafe, plus 3 information controls. Part two of our Falling Leaves weekend of events takes in some of the best Borders roads and views.</p>
-                    <br>
-                    <br>
-                    <a href="#" class="btn">Details</a>
-                </div>
-
-                <div class="card">
-                    <img src="/images/event2.jpg" alt="card backgound" class="card-img">
-                    <h1>The Long Dark Teatime of the Soul</h1>
-                    <p class="title">Distance</p>
-                    <p class="info">200km</p>
-                    <p class="title">Description</p>
-                    <p class="info">Lovely route through the Western Scottish Borders and Dumfries and Galloway via the beautiful Castle O’er road to Longtown and back.</p>
-                    <br>
-                    <br>
-                    <a href="#" class="btn">Details</a>
-                </div>
-
-                <div class="card">
-                    <img src="/images/event1.jpg" alt="card backgound" class="card-img">
-                    <h1>Alston and Back</h1>
-                    <p class="title">Distance</p>
-                    <p class="info">300km</p>
-                    <p class="title">Description</p>
-                    <p class="info">As it’s name suggests,an out and back route to Alston via the valley roads through Eskdalemuir and Langholm with good views and not excessive amounts of climb for the area. </p>
-                    <br>
-                    <br>
-                    <a href="#" class="btn">Details</a>
-                </div>
-
-                <div class="card">
-                    <img src="/images/event3.jpg" alt="card backgound" class="card-img">
-                    <h1>Home In Time for Tea</h1>
-                    <p class="title">Distance</p>
-                    <p class="info">116km</p>
-                    <p class="title">Description</p>
-                    <p class="info">Controls at Eskdalemuir. Beautiful Ettrick valley route to Eskdalemuir with good café stop halfway and return with the gradient and usually the wind with you too.</p>
-                    <br>
-                    <a href="#" class="btn">Details</a>
-                </div>
+          <h1 class="heading">Upcoming Events</h1>
+          <div class="card-wrapper">
+            <div class="card">
+              <img
+                src="/images/event4.jpg"
+                alt="card backgound"
+                class="card-img"
+              />
+              <h1>Ride of the Valkyries</h1>
+              <p class="title">Distance</p>
+              <p class="info">106km</p>
+              <p class="title">Description</p>
+              <p class="info">
+                Controls at Gordon Arms Hotel and Lilliesleaf Jammy Coo Cafe,
+                plus 3 information controls. Part two of our Falling Leaves
+                weekend of events takes in some of the best Borders roads and
+                views.
+              </p>
+              <br />
+              <br />
+              <a href="#" class="btn">Details</a>
             </div>
-        </div>
-    </section>
 
-    <!-- Landmarks Cards -->
-    <section id="landmarks" class="landmarks">
+            <div class="card">
+              <img
+                src="/images/event2.jpg"
+                alt="card backgound"
+                class="card-img"
+              />
+              <h1>The Long Dark Teatime of the Soul</h1>
+              <p class="title">Distance</p>
+              <p class="info">200km</p>
+              <p class="title">Description</p>
+              <p class="info">
+                Lovely route through the Western Scottish Borders and Dumfries
+                and Galloway via the beautiful Castle O’er road to Longtown and
+                back.
+              </p>
+              <br />
+              <br />
+              <a href="#" class="btn">Details</a>
+            </div>
+
+            <div class="card">
+              <img
+                src="/images/event1.jpg"
+                alt="card backgound"
+                class="card-img"
+              />
+              <h1>Alston and Back</h1>
+              <p class="title">Distance</p>
+              <p class="info">300km</p>
+              <p class="title">Description</p>
+              <p class="info">
+                As it’s name suggests,an out and back route to Alston via the
+                valley roads through Eskdalemuir and Langholm with good views
+                and not excessive amounts of climb for the area.
+              </p>
+              <br />
+              <br />
+              <a href="#" class="btn">Details</a>
+            </div>
+
+            <div class="card">
+              <img
+                src="/images/event3.jpg"
+                alt="card backgound"
+                class="card-img"
+              />
+              <h1>Home In Time for Tea</h1>
+              <p class="title">Distance</p>
+              <p class="info">116km</p>
+              <p class="title">Description</p>
+              <p class="info">
+                Controls at Eskdalemuir. Beautiful Ettrick valley route to
+                Eskdalemuir with good café stop halfway and return with the
+                gradient and usually the wind with you too.
+              </p>
+              <br />
+              <a href="#" class="btn">Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Landmarks Cards -->
+      <section id="landmarks" class="landmarks">
         <div class="landmarksContainer">
-            <h1 class="heading">Landmarks</h1>
-            <h2 class="subheading">Things to See In The Area</h2>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="/images/floorsCastle.jpg" alt="card backgound" class="card-img">
-                    <h1>Floors Castle</h1>
-                    <p class="title">Location</p>
-                    <p class="info">Kelso (15 Miles)</p>
-                    <a href="#" class="btn">Details</a>
-                </div>
-
-                <div class="card">
-                    <img src="/images/melroseAbbey.jpg" alt="card backgound" class="card-img">
-                    <h1>Melrose Abbey</h1>
-                    <p class="title">Location</p>
-                    <p class="info">Melrose (5 Miles)</p>
-                    <a href="#" class="btn">Details</a>
-                </div>
-
-                <div class="card">
-                    <img src="/images/galashiels.jpg" alt="card backgound" class="card-img">
-                    <h1>Bank Street Gardens</h1>
-                    <p class="title">Location</p>
-                    <p class="info">Galashiels</p>
-                    <a href="#" class="btn">Details</a>
-                </div>
-
-                <div class="card">
-                    <img src="/images/abbotsford.jpg" alt="card backgound" class="card-img">
-                    <h1>Abbotsford House</h1>
-                    <p class="title">Location</p>
-                    <p class="info">Melrose (4 Miles)</p>
-                    <a href="#" class="btn">Details</a>
-                </div>
-
-                <div class="card">
-                    <img src="/images/traquairHouse.jpg" alt="card backgound" class="card-img">
-                    <h1>Traquair House</h1>
-                    <p class="title">Location</p>
-                    <p class="info">Innerleithen (14 Miles)</p>
-                    <a href="#" class="btn">Details</a>
-                </div>
+          <h1 class="heading">Landmarks</h1>
+          <h2 class="subheading">Things to See In The Area</h2>
+          <div class="card-wrapper">
+            <div class="card">
+              <img
+                src="/images/floorsCastle.jpg"
+                alt="card backgound"
+                class="card-img"
+              />
+              <h1>Floors Castle</h1>
+              <p class="title">Location</p>
+              <p class="info">Kelso (15 Miles)</p>
+              <a href="#" class="btn">Details</a>
             </div>
-        </div>
-    </section>
 
-    <!-- Map -->
-    <div id="map" class="map center bg-light">
+            <div class="card">
+              <img
+                src="/images/melroseAbbey.jpg"
+                alt="card backgound"
+                class="card-img"
+              />
+              <h1>Melrose Abbey</h1>
+              <p class="title">Location</p>
+              <p class="info">Melrose (5 Miles)</p>
+              <a href="#" class="btn">Details</a>
+            </div>
+
+            <div class="card">
+              <img
+                src="/images/galashiels.jpg"
+                alt="card backgound"
+                class="card-img"
+              />
+              <h1>Bank Street Gardens</h1>
+              <p class="title">Location</p>
+              <p class="info">Galashiels</p>
+              <a href="#" class="btn">Details</a>
+            </div>
+
+            <div class="card">
+              <img
+                src="/images/abbotsford.jpg"
+                alt="card backgound"
+                class="card-img"
+              />
+              <h1>Abbotsford House</h1>
+              <p class="title">Location</p>
+              <p class="info">Melrose (4 Miles)</p>
+              <a href="#" class="btn">Details</a>
+            </div>
+
+            <div class="card">
+              <img
+                src="/images/traquairHouse.jpg"
+                alt="card backgound"
+                class="card-img"
+              />
+              <h1>Traquair House</h1>
+              <p class="title">Location</p>
+              <p class="info">Innerleithen (14 Miles)</p>
+              <a href="#" class="btn">Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map -->
+      <div id="map" class="map center bg-light">
         <h1>MAP OF LOCAL AREA</h1>
-        <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1301.3741305949002!2d-2.8179655339448524!3d55.623352176705104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887680c4766bb4d%3A0xdcf6a099448fe465!2sGalashiels!5e0!3m2!1sen!2suk!4v1600862528881!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-    <a href="#" class="jumpTopBtn">
+        <iframe
+          class="googlemap"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1301.3741305949002!2d-2.8179655339448524!3d55.623352176705104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887680c4766bb4d%3A0xdcf6a099448fe465!2sGalashiels!5e0!3m2!1sen!2suk!4v1600862528881!5m2!1sen!2suk"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+      <a href="#" class="jumpTopBtn">
         <i class="fas fa-arrow-up"></i>
-    </a>
+      </a>
     </main>
 
     <!-- Footer -->
     <footer class="center bg-dark">
-        <div class="container grid-3 center">
-            <div>
-                <i class="fas fa-store fa-2x"></i>
-                <h3>Address</h3>
-                <p>123 Wheel Drive<br>Galashiels<br>TD1 7DE</p>
-            </div>
-
-            <div>
-                <div><i class="fas fa-phone fa-2x"></i></div>
-                <h3>Contact</h3>
-                <p>(01234) 567 567<br><br>admin@bikekingborders.com</p>
-            </div>
-
-            <div>
-                <div><i class="far fa-clock fa-2x"></i></div>
-                <h3>Opening Hours</h3>
-                <p>Mon-Fri: 0900-1700<br>Sat: 0900-1900<br>Sun: 1000-1600</p>
-            </div>
+      <div class="container grid-3 center">
+        <div>
+          <i class="fas fa-store fa-2x"></i>
+          <h3>Address</h3>
+          <p>123 Wheel Drive<br />Galashiels<br />TD1 7DE</p>
         </div>
-        <p class="copyright">Bike King Borders &copy; 2020</p>
+
+        <div>
+          <div><i class="fas fa-phone fa-2x"></i></div>
+          <h3>Contact</h3>
+          <p>(01234) 567 567<br /><br />admin@bikekingborders.com</p>
+        </div>
+
+        <div>
+          <div><i class="far fa-clock fa-2x"></i></div>
+          <h3>Opening Hours</h3>
+          <p>Mon-Fri: 0900-1700<br />Sat: 0900-1900<br />Sun: 1000-1600</p>
+        </div>
+      </div>
+      <p class="copyright">Bike King Borders &copy; 2020</p>
     </footer>
     <script type="text/javascript" src="/scripts.js"></script>
     <script>
-        function hideNav() {
-            var x = document.getElementById("routes-nav");
-            var y = document.getElementById("routes")
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-                y.style.paddingTop = "18.5rem";
-            }
+      function hideNav() {
+        var x = document.getElementById("routes-nav");
+        var y = document.getElementById("routes");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+          y.style.paddingTop = "18.5rem";
         }
+      }
 
-        function showNav() {
-            var x = document.getElementById("routes-nav");
-            var y = document.getElementById("routes")
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-                y.style.paddingTop = "4rem";
-            }
+      function showNav() {
+        var x = document.getElementById("routes-nav");
+        var y = document.getElementById("routes");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+          y.style.paddingTop = "4rem";
         }
+      }
     </script>
-    
-</body>
+  </body>
 </html>
