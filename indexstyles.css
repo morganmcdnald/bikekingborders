@@ -79,13 +79,13 @@ nav {
 }
 
 .close i {
-  color: #eebb4d;
+  color: #181818;
 }
 
 .nav-list {
   width: 25rem;
   height: 100vh;
-  background-color: #d6efc7;
+  background-color: #eefaff;
   position: fixed;
   top: 0;
   right: -26rem;
