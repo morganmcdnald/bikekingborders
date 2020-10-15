@@ -33,9 +33,14 @@ html {
 
 .routes-menu {
   /* padding: 0 30px 0 0; */
-  background-color: #4d8091;
+  background-color: #3b7388;
   z-index: 0;
   display: block;
+}
+
+.area-header {
+  background-color: #3b7388;
+  padding-bottom: 10rem;
 }
 
 .routes-menu a {
@@ -499,17 +504,16 @@ footer p {
   letter-spacing: 3px;
   padding-bottom: 2rem;
 }
-
+/* 
 .service-bg,
 .area-bg {
   background: linear-gradient(
       180deg,
       rgb(58 114 134 / 90%) 0%,
       rgb(30 95 88 / 87%) 100%
-    ),
-    url(/images/service-bg.jpg) no-repeat;
-  background-size: cover;
-}
+    )
+} */
+
 
 /* Routes Page */
 
@@ -901,7 +905,6 @@ textarea {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #d6efc7;
     box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
   }
 
@@ -935,14 +938,14 @@ textarea {
     width: 100%;
     padding: 1.5rem 1rem;
     margin-bottom: 1.5rem;
-    background-color: #eebb4d;
-    color: #181818;
     font-size: 1.8rem;
     border: none;
     outline: none;
     cursor: pointer;
     transition: 0.3s;
   }
+
+  
 }
 
 .service-heading {
@@ -1055,7 +1058,7 @@ textarea {
   }
 
   .table tbody tr:hover {
-    background-color: #d6efc7;
+    background-color: #dcf4fd;
   }
 }
 
@@ -1168,6 +1171,11 @@ textarea {
     cursor: pointer;
     background-color: #184d47;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1);
+  }
+
+  .right label {
+    background: none;
+    box-shadow: none;
   }
 
   .menu,
