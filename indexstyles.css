@@ -78,8 +78,9 @@ header i {
   cursor: pointer;
 }
 
-.nav-list i {
+.nav-list p {
   color: #181818;
+  font-size: 3rem;
 }
 
 .nav-list {
