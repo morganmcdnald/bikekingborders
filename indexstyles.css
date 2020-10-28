@@ -418,6 +418,12 @@ footer p {
   color: #dff6ff;
 }
 
+.nav-list li {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
 /* Media Queries */
 @media screen and (max-width: 350px) {
   /* .about-container i {
