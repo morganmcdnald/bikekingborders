@@ -68,13 +68,13 @@ nav {
   width: 7rem;
 }
 
-.menu-icons i {
+header i {
   font-size: 3.5rem;
   color: #fafafa;
   cursor: pointer;
 }
 
-.close i {
+.nav-list i {
   color: #181818;
 }
 
