@@ -197,7 +197,7 @@
     <p class="copyright">Bike King Borders &copy; 2020</p>
   </footer>
 
-  <script src="/scripts.js" async></script>
+  <script src="/scripts.js"></script>
   <script>
     function maximiseBox() {
       var x = document.getElementById("tbox");
@@ -214,6 +214,16 @@
       }
     }
     window.onload = init;
+
+    var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'css/style.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(cb);
+        else window.addEventListener('load', cb);
   </script>
 </body>
 
