@@ -22,7 +22,7 @@ a {
 
 ul {
   list-style: none;
-  display: flex;
+  /* display: flex; */
 }
 
 p {
@@ -454,6 +454,10 @@ footer p {
 
   nav {
     align-items: right;
+  }
+
+  ul {
+    display: flex;
   }
 
   .nav-brand {
