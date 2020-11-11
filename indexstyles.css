@@ -243,9 +243,8 @@ header i {
       180deg,
       rgba(58, 114, 134, 0.9) 0%,
       rgba(30, 95, 88, 0.8) 100%
-    );
-    /* ,
-    url(/images/bg1.webp) center no-repeat; */
+    ),
+    url(/images/bg1.webp) center no-repeat;
   background-size: cover;
   text-align: center;
 }
