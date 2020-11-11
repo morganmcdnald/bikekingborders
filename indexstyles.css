@@ -136,7 +136,7 @@ header i {
       rgba(58, 114, 134, 0.9) 0%,
       rgba(58, 114, 134, 0.9) 100%
     ),
-    url(/images/aboutBike7.jpg) center no-repeat;
+    url(/images/aboutBike7.webp) center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -244,7 +244,7 @@ header i {
       rgba(58, 114, 134, 0.9) 0%,
       rgba(30, 95, 88, 0.8) 100%
     ),
-    url(/images/bg1.jpg) center no-repeat;
+    url(/images/bg1.webp) center no-repeat;
   background-size: cover;
   text-align: center;
 }
