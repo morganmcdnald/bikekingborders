@@ -624,8 +624,8 @@ footer p {
   background-color: #377081;
 }
 
-.events .card h1,
-.store .card h1 {
+.events .card h2,
+.store .card h2 {
   padding: 0.5rem;
 }
 
@@ -652,7 +652,7 @@ footer p {
   overflow-x: hidden;
 }
 
-.card h1 {
+.card h2 {
   font-size: 2.7rem;
   color: #181818;
   margin: 0.5rem 0;
@@ -673,7 +673,7 @@ footer p {
   text-align: center;
 }
 
-.store .card h1 {
+.store .card h2 {
   color: #181818;
   font-weight: 500;
   font-size: 2rem;
@@ -693,7 +693,7 @@ footer p {
 
 .events .card .title,
 .events .card .info,
-.events .card h1 {
+.events .card h2 {
   color: #fafafa;
 }
 
