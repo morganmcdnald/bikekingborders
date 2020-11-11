@@ -300,7 +300,7 @@ header i {
 
 /* Newsletter Form */
 .newsletter {
-  background: url(/images/nletterblue.png);
+  background: url(/images/nletterblue.webp);
   background-size: cover;
   position: relative;
 }
@@ -543,7 +543,7 @@ footer p {
 
 @media screen and (min-width: 1350px) {
   .newsletter {
-    background: url(/images/nletterwideblue.png);
+    background: url(/images/nletterwideblue.webp);
     background-size: cover;
   }
 
