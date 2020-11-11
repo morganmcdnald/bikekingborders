@@ -444,43 +444,43 @@ footer p {
 .img-1 {
   grid-area: img-1;
   min-height: 81.5rem;
-  background-image: url("/images/aboutBike.jpg");
+  background-image: url("/images/aboutBike.webp");
 }
 
 .img-2 {
   grid-area: img-2;
   min-height: 81.5rem;
-  background-image: url("/images/aboutBike2.jpg");
+  background-image: url("/images/aboutBike2.webp");
 }
 
 .img-3 {
   grid-area: img-3;
-  background-image: url("/images/aboutBike3.jpg");
+  background-image: url("/images/aboutBike3.webp");
 }
 
 .img-4 {
   grid-area: img-4;
-  background-image: url("/images/aboutBike4.jpg");
+  background-image: url("/images/aboutBike4.webp");
 }
 
 .img-5 {
   grid-area: img-5;
-  background-image: url("/images/aboutBike5.jpg");
+  background-image: url("/images/aboutBike5.webp");
 }
 
 .img-6 {
   grid-area: img-6;
-  background-image: url("/images/aboutBike6.jpg");
+  background-image: url("/images/aboutBike6.webp");
 }
 
 .img-7 {
   grid-area: img-7;
-  background-image: url("/images/landingBike.jpg");
+  background-image: url("/images/landingBike.webp");
 }
 
 .img-8 {
   grid-area: img-8;
-  background-image: url("/images/aboutBike7.jpg");
+  background-image: url("/images/aboutBike7.webp");
 }
 
 .googlemap {
