@@ -299,11 +299,11 @@ header i {
 }
 
 /* Newsletter Form */
-/* .newsletter {
+.newsletter {
   background: url(/images/nletterblue.webp);
   background-size: cover;
   position: relative;
-} */
+}
 
 .newsContainer,
 .about-container {
@@ -546,10 +546,10 @@ footer p {
 }
 
 @media screen and (min-width: 1350px) {
-  /* .newsletter {
+  .newsletter {
     background: url(/images/nletterwideblue.webp);
     background-size: cover;
-  } */
+  }
 
   .about-container p {
     font-size: 1.8rem;
