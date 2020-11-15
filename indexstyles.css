@@ -452,10 +452,6 @@ footer p {
     height: 8rem;
   }
 
-  nav {
-    align-items: right;
-  }
-
   ul {
     display: flex;
   }

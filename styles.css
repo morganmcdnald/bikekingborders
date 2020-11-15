@@ -20,7 +20,6 @@ html {
 }
 
 .routes-nav {
-  position: -webkit-sticky; /* Safari & IE */
   position: sticky;
   top: 0rem;
   margin-top: 80px;
@@ -601,9 +600,8 @@ footer p {
 
 .store {
   background: linear-gradient(
-      180,
-      rgb(58 114 134 / 63%) 0%,
-      rgb(30 95 88 / 87%) 100%
+      rgba(58, 114, 134, 0.63) 0%,
+      rgba(30, 95, 88, 0.87) 100%
     ),
     url(/images/storebg4.png) no-repeat;
   background-size: cover;
@@ -614,7 +612,6 @@ footer p {
   border-radius: 0;
   width: 34rem;
   background-color: #fafafa;
-  align-items: left;
   justify-content: left;
   box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.4);
 }
@@ -1266,10 +1263,6 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-  }
-
-  .gallery-container {
-    padding-right: auto;
   }
 
   .routes-menu a {
